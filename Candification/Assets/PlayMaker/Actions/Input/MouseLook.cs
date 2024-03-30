@@ -1,7 +1,19 @@
 ﻿// (c) Copyright HutongGames, LLC 2010-2021. All rights reserved.
 
-using System;
+// NOTE: The new Input System and legacy Input Manager can both be enabled in a project.
+// This action was developed for the old input manager, so we will use it if its available. 
+// If only the new input system is available we will try to use that instead,
+// but there might be subtle differences in the behaviour in the new system!
+
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+#define NEW_INPUT_SYSTEM_ONLY
+#endif
+
 using UnityEngine;
+
+#if NEW_INPUT_SYSTEM_ONLY
+using UnityEngine.InputSystem;
+#endif
 
 namespace HutongGames.PlayMaker.Actions
 {
@@ -127,14 +139,26 @@ namespace HutongGames.PlayMaker.Actions
 
         private float GetXRotation()
 		{
-			rotationX += Input.GetAxis("Mouse X") * sensitivityX.Value;
-			rotationX = ClampAngle(rotationX, minimumX, maximumX) % 360;
+#if NEW_INPUT_SYSTEM_ONLY
+            if (Mouse.current == null) return rotationX;
+			// fudge factor accounts for sensitivity of old input system
+            rotationX += Mouse.current.delta.ReadValue().x * sensitivityY.Value * 0.05f; 
+#else
+            rotationX += Input.GetAxis("Mouse X") * sensitivityX.Value;
+#endif
+            rotationX = ClampAngle(rotationX, minimumX, maximumX) % 360;
 			return rotationX;
 		}
 
         private float GetYRotation(float invert = 1)
 		{
-			rotationY += Input.GetAxis("Mouse Y") * sensitivityY.Value * invert;
+#if NEW_INPUT_SYSTEM_ONLY
+            if (Mouse.current == null) return rotationY;
+            // fudge factor accounts for sensitivity of old input system
+            rotationY += Mouse.current.delta.ReadValue().y * sensitivityY.Value * invert * -0.05f; 
+#else
+            rotationY += Input.GetAxis("Mouse Y") * sensitivityY.Value * invert;
+#endif
 			rotationY = ClampAngle(rotationY, minimumY, maximumY) % 360;
 			return rotationY;
 		}
