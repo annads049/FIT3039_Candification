@@ -18,8 +18,8 @@ namespace HutongGames.PlayMakerEditor
     public class PlayMakerWelcomeWindow : EditorWindow
     {
         // Remember to update version info since it's used by export scripts!
-        public const string InstallCurrentVersion = "1.9.1";
-        public const string InstallAssemblyVersion = "1.9.1.p5";
+        public const string InstallCurrentVersion = "1.9.8";
+        public const string InstallAssemblyVersion = "1.9.8f1";
         public const string InstallBetaVersion = "";
         public const string Version = InstallCurrentVersion + " " + InstallBetaVersion;
 
@@ -78,7 +78,7 @@ namespace HutongGames.PlayMakerEditor
 
         private static bool stylesInitialized;
 
-#if PLAYMAKER_1_9_1
+#if PLAYMAKER_1_9_8
         [MenuItem("PlayMaker/Welcome Screen", false, 500)]
 #elif PLAYMAKER
         [MenuItem("PlayMaker/Update PlayMaker", false, 500)]
@@ -97,7 +97,7 @@ namespace HutongGames.PlayMakerEditor
 
         public static void Open()
         {
-            //OpenWelcomeWindow();
+            OpenWelcomeWindow();
         }
 
         public static void CheckUnityVersion()
@@ -472,6 +472,34 @@ namespace HutongGames.PlayMakerEditor
 
         public static void DoReleaseNotes()
         {
+            // Version 1.9.3
+
+            GUILayout.Label("Version 1.9.3", EditorStyles.boldLabel);
+
+            EditorGUILayout.HelpBox(
+                "\nNew Input System" +
+                "\n\nPlayMaker 1.9.3 includes beta actions for the new Unity Input System." +
+                "\nOld Input actions have been updated where possible to work with the new Input System, " +
+                "and new actions have been added for PlayerInput and Gamepad systems." +
+                "\nNOTE: If you're updating GetKey actions to the new Input System you will need to re-enter " +
+                "the key code, since the new Input System uses different key codes." +
+                "\n" +
+                "\nInt Subtract" +
+                "\n\n1.9.3 includes the Int Subtract action previously available on the Ecosystem. " +
+                "This action is used in the latest First Person Controller tutorial series on YouTube." +
+                "\n",
+                MessageType.Info);
+
+            // Version 1.9.2
+
+            GUILayout.Label("Version 1.9.2", EditorStyles.boldLabel);
+
+            EditorGUILayout.HelpBox(
+                "\nPlayMaker 1.9.2 adds some new Character Controller actions." +
+                "\nIf you are following the First Person Controller tutorial series on YouTube, make sure to import this update." +
+                "\n",
+                MessageType.Info);
+
             // Version 1.9.1
 
             GUILayout.Label("Version 1.9.1", EditorStyles.boldLabel);

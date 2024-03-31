@@ -1,10 +1,23 @@
-// (c) Copyright HutongGames, LLC 2010-2020. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2021. All rights reserved.
 
+// The new Input System optionally supports the legacy input manager 
+#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+#define NEW_INPUT_SYSTEM_ONLY
+#endif
+
+using System;
+
+#if !NEW_INPUT_SYSTEM_ONLY
 using UnityEngine;
+#endif
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Input)]
+#if NEW_INPUT_SYSTEM_ONLY
+    [Obsolete("This action is not supported in the new Input System. " +
+              "Use PlayerInputGetButtonValues or GamepadGetButtonValues instead.")]
+#endif
+    [ActionCategory(ActionCategory.Input)]
 	[Tooltip("Sends an Event when a Button is pressed.")]
 	public class GetButtonDown : FsmStateAction
 	{
@@ -28,7 +41,8 @@ namespace HutongGames.PlayMaker.Actions
 
 		public override void OnUpdate()
 		{
-			var buttonDown = Input.GetButtonDown(buttonName.Value);
+#if !NEW_INPUT_SYSTEM_ONLY
+            var buttonDown = Input.GetButtonDown(buttonName.Value);
 
             storeResult.Value = buttonDown;
 
@@ -36,6 +50,7 @@ namespace HutongGames.PlayMaker.Actions
 			{
 			    Fsm.Event(sendEvent);
 			}
+#endif
         }
 
 #if UNITY_EDITOR
@@ -43,6 +58,16 @@ namespace HutongGames.PlayMaker.Actions
         {
             return ActionHelpers.AutoName(this, buttonName) + " " + (sendEvent != null ? sendEvent.Name : "");
         }
+
+#if NEW_INPUT_SYSTEM_ONLY
+
+        public override string ErrorCheck()
+        {
+            return "This action is not supported in the new Input System. " +
+                   "Use PlayerInputGetButtonValues or GamepadGetButtonValues instead.";
+        }
+#endif
+
 #endif
     }
 }

@@ -125,6 +125,9 @@ namespace HutongGames.PlayMaker.Actions
 				case "Object":
 					component.StartCoroutine(functionCall.FunctionName, functionCall.ObjectParameter.Value);
 					return;
+				case "Enum":
+					component.StartCoroutine(functionCall.FunctionName, functionCall.EnumParameter.Value);
+					return;
 			}
 		}
 

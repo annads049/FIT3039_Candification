@@ -67,8 +67,8 @@ namespace HutongGames.PlayMaker.Actions
             var texture = cursorTexture.Value;
 
 			if (texture != null)
-			{
-				var mousePos = Input.mousePosition;
+            {
+                var mousePos = ActionHelpers.GetMousePosition();
 				var pos =  new Rect(mousePos.x - texture.width * 0.5f, 
 					Screen.height - mousePos.y - texture.height * 0.5f, 
                     texture.width, texture.height);
