@@ -17,12 +17,15 @@ MonoBehaviour:
   - {fileID: 849518234258217139}
   EditorEvents:
   - {fileID: 5179446266928312040}
+  - {fileID: 3281252749097813686}
+  - {fileID: 1868545441282965405}
+  - {fileID: 2919793143214938418}
   EditorParameters: []
   MasterBanks:
   - {fileID: 849518234258217139}
   StringsBanks:
   - {fileID: 6644413979552709926}
-  cacheTime: 638495930923129464
+  cacheTime: 638495937335639801
   cacheVersion: 131591
 --- !u!114 &849518234258217139
 MonoBehaviour:
@@ -39,11 +42,92 @@ MonoBehaviour:
   Path: ../SND/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638495930923118134
+  lastModified: 638495937335639801
   FileSizes:
   - Name: Desktop
-    Value: 35040
+    Value: 123040
   Exists: 1
+--- !u!114 &1868545441282965405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Key
+  m_EditorClassIdentifier: 
+  Path: event:/Key
+  Guid:
+    Data1: 1171672630
+    Data2: 1308645126
+    Data3: 894130344
+    Data4: -2105041310
+  Banks:
+  - {fileID: 849518234258217139}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1923
+--- !u!114 &2919793143214938418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Door Opening
+  m_EditorClassIdentifier: 
+  Path: event:/Door Opening
+  Guid:
+    Data1: -2088783113
+    Data2: 1220216243
+    Data3: 678478509
+    Data4: 942038946
+  Banks:
+  - {fileID: 849518234258217139}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5722
+--- !u!114 &3281252749097813686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Paper Notes
+  m_EditorClassIdentifier: 
+  Path: event:/Paper Notes
+  Guid:
+    Data1: 1822630958
+    Data2: 1185550626
+    Data3: 1410975378
+    Data4: -2120378535
+  Banks:
+  - {fileID: 849518234258217139}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1923
 --- !u!114 &5179446266928312040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,8 +170,8 @@ MonoBehaviour:
   Path: ../SND/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638495930923129464
+  lastModified: 638495937335639801
   FileSizes:
   - Name: Desktop
-    Value: 806
+    Value: 936
   Exists: 1
