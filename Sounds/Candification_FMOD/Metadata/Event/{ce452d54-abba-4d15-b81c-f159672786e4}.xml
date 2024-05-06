@@ -116,7 +116,7 @@
 	</object>
 	<object class="SoundScatterer" id="{20eabf23-c65a-4d76-91c2-e9d7903254f5}">
 		<property name="length">
-			<value>8</value>
+			<value>6</value>
 		</property>
 		<property name="maximumTimeBetweenSounds">
 			<value>500</value>
@@ -207,6 +207,7 @@
 		<relationship name="automationPoints">
 			<destination>{516e00f4-7d4c-4ebe-852a-c2011fcb3529}</destination>
 			<destination>{32322596-9ee5-41f2-956e-9e802c84e38d}</destination>
+			<destination>{5ccd803c-ad24-4610-aeed-099592ee9d7c}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{77bb73fd-b96e-4d21-a3c0-4205bf5123be}">
@@ -261,10 +262,10 @@
 	<object class="MixerBusFader" id="{b6660cdd-cf57-42c0-9d3b-16e67bf0b054}" />
 	<object class="AutomationPoint" id="{516e00f4-7d4c-4ebe-852a-c2011fcb3529}">
 		<property name="position">
-			<value>8</value>
+			<value>6</value>
 		</property>
 		<property name="value">
-			<value>150</value>
+			<value>130</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{32322596-9ee5-41f2-956e-9e802c84e38d}">
@@ -272,13 +273,21 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>80</value>
+			<value>25</value>
 		</property>
 		<property name="curveShape">
 			<value>0.5</value>
 		</property>
 		<property name="isSCurve">
 			<value>true</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{5ccd803c-ad24-4610-aeed-099592ee9d7c}">
+		<property name="position">
+			<value>3</value>
+		</property>
+		<property name="value">
+			<value>80</value>
 		</property>
 	</object>
 </objects>
