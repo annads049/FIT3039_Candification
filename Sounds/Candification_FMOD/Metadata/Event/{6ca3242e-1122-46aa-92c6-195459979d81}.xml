@@ -56,7 +56,11 @@
 			<destination>{f0b7dff9-eaf8-45fe-ba8c-8fdf9e520a8e}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{cb1af5ac-5c1c-4874-9b49-38de7b0fe326}" />
+	<object class="EventAutomatableProperties" id="{cb1af5ac-5c1c-4874-9b49-38de7b0fe326}">
+		<property name="maximumDistance">
+			<value>7.20000029</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{0830ae54-33c5-464f-869d-f5fcaf1c1b8c}" />
 	<object class="GroupTrack" id="{2ce88526-9370-4763-88b4-2759fd0ae62e}">
 		<relationship name="modules">
@@ -92,6 +96,9 @@
 		<property name="length">
 			<value>1.9229931972789116</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{210fb1d3-4fe2-4bb5-b39d-ef8b57577837}</destination>
+		</relationship>
 		<relationship name="fadeOutCurve">
 			<destination>{78edfb0d-6b46-4511-8d58-8aa38b6a5510}</destination>
 		</relationship>
@@ -121,6 +128,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{d633d011-dc39-4fec-8aef-a1c1b6e7e34e}" />
 	<object class="MixerBusFader" id="{dd60fd75-146c-4986-abad-05b7625d6b43}" />
+	<object class="RandomizerModulator" id="{210fb1d3-4fe2-4bb5-b39d-ef8b57577837}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>12.5</value>
+		</property>
+	</object>
 	<object class="FadeCurve" id="{78edfb0d-6b46-4511-8d58-8aa38b6a5510}">
 		<relationship name="startPoint">
 			<destination>{31f23b50-6f76-49e0-b048-c316e7618401}</destination>

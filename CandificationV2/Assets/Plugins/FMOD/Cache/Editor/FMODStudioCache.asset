@@ -26,7 +26,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5722
+  Length: 4935
+--- !u!114 &-4436047269743211867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1078649384
+    data2: 1846418511
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Steps
+  - Carpet
+  - Grass
+  Exists: 1
 --- !u!114 &-3763014787272012608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,7 +79,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 7.2000003
   Length: 1923
 --- !u!114 &-2781746238857800742
 MonoBehaviour:
@@ -69,10 +96,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638510194035019381
+  lastModified: 638515866716544780
   FileSizes:
   - Name: Desktop
-    Value: 123264
+    Value: 175776
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -89,10 +116,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638502650979444440
+  lastModified: 638515866716554792
   FileSizes:
   - Name: Desktop
-    Value: 936
+    Value: 1200
   Exists: 1
 --- !u!114 &-541838829209311806
 MonoBehaviour:
@@ -119,8 +146,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 1923
+  MaxDistance: 9
+  Length: 700
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,13 +168,45 @@ MonoBehaviour:
   - {fileID: -541838829209311806}
   - {fileID: 1663244181956448934}
   - {fileID: -7130834810275444655}
+  - {fileID: 5246238109692643992}
+  - {fileID: 1663791105317168172}
+  - {fileID: 3253879789328390699}
+  - {fileID: 7392955133059206655}
+  - {fileID: 4975243310831629352}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638510194035019381
+  cacheTime: 638515866716554792
   cacheVersion: 131591
+--- !u!114 &1652970571669271986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Carpet/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1078649384
+    data2: 1846418511
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Steps
+  - Carpet
+  - Grass
+  Exists: 1
 --- !u!114 &1663244181956448934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +230,144 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
+  Parameters:
+  - {fileID: -4436047269743211867}
+  MinDistance: 1
+  MaxDistance: 1
+  Length: 0
+--- !u!114 &1663791105317168172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Grass
+  m_EditorClassIdentifier: 
+  Path: event:/Grass
+  Guid:
+    Data1: 247425136
+    Data2: 1094480702
+    Data3: -1714169431
+    Data4: 1887602407
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 1
   Length: 0
+--- !u!114 &3253879789328390699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Carpet
+  m_EditorClassIdentifier: 
+  Path: event:/Carpet
+  Guid:
+    Data1: 1434016898
+    Data2: 1150744839
+    Data3: -2075477349
+    Data4: -863100475
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1652970571669271986}
+  MinDistance: 1
+  MaxDistance: 1
+  Length: 0
+--- !u!114 &4975243310831629352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pillar Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Pillar Hit
+  Guid:
+    Data1: -1268119065
+    Data2: 1080502704
+    Data3: 1650523834
+    Data4: -1673863734
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
+--- !u!114 &5246238109692643992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Discovery
+  m_EditorClassIdentifier: 
+  Path: event:/Discovery
+  Guid:
+    Data1: -1954450037
+    Data2: 1307718189
+    Data3: 720193973
+    Data4: -358025536
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1822
+--- !u!114 &7392955133059206655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wall Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Wall Hit
+  Guid:
+    Data1: -779010559
+    Data2: 1285908661
+    Data3: 967714950
+    Data4: 2041309065
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 940
