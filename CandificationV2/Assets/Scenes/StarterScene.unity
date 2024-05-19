@@ -630,6 +630,25 @@ Transform:
   m_Father: {fileID: 12141644}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &17697111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7235015103121818086, guid: b0fbea35d85f045d4aba28e71dc0a6e3, type: 3}
+  m_PrefabInstance: {fileID: 787522332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &17697115
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17697111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3758573805739257388, guid: b0fbea35d85f045d4aba28e71dc0a6e3, type: 3}
 --- !u!1001 &30790083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3115,7 +3134,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: fbb811ea21002eb46b0886e7acdb3224, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 665818c627db9d442a848cd6e96f2129, type: 2}
+      objectReference: {fileID: 2100000, guid: d43a56f936d6b4c48805001e42e0cc65, type: 2}
     - target: {fileID: 919132149155446097, guid: fbb811ea21002eb46b0886e7acdb3224, type: 3}
       propertyPath: m_Name
       value: CloakLetter
@@ -3334,7 +3353,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2867a1767b2204c09adf221d85a02ddf, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2867a1767b2204c09adf221d85a02ddf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3404,6 +3423,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1085072, y: 1.0779893, z: 2.1383836}
   m_Center: {x: -0.05425167, y: 0.38256028, z: 0.07332515}
+--- !u!1 &334787359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3957782524123411102, guid: b0fbea35d85f045d4aba28e71dc0a6e3, type: 3}
+  m_PrefabInstance: {fileID: 787522332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &334787363
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334787359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5302568919011541938, guid: b0fbea35d85f045d4aba28e71dc0a6e3, type: 3}
 --- !u!1 &339970827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,7 +4349,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: fbb811ea21002eb46b0886e7acdb3224, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 665818c627db9d442a848cd6e96f2129, type: 2}
+      objectReference: {fileID: 2100000, guid: d43a56f936d6b4c48805001e42e0cc65, type: 2}
     - target: {fileID: 919132149155446097, guid: fbb811ea21002eb46b0886e7acdb3224, type: 3}
       propertyPath: m_Name
       value: CourtyardLetter
@@ -5022,6 +5060,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80624cc7b097ca40bc8d884da4ae040, type: 3}
+--- !u!1 &639852041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -344004081357383697, guid: b0fbea35d85f045d4aba28e71dc0a6e3, type: 3}
+  m_PrefabInstance: {fileID: 787522332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &639852045
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639852041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3861478300804232965, guid: b0fbea35d85f045d4aba28e71dc0a6e3, type: 3}
 --- !u!4 &654347102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6f175d992444a0d4fb9f20c33d9e18d8, type: 3}
@@ -18359,7 +18416,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cb76755d83b584a3ea23cae7003d2b10, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb76755d83b584a3ea23cae7003d2b10, type: 3}
       propertyPath: m_LocalScale.x
@@ -20419,6 +20476,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1829194775}
     m_Modifications:
+    - target: {fileID: -8832195521633279065, guid: 233540325298f3647a457da4835eea08, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: effe8d89a17b54bf7af45260fda2f269, type: 2}
     - target: {fileID: -8679921383154817045, guid: 233540325298f3647a457da4835eea08, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -20475,10 +20536,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4370013888282811459, guid: 233540325298f3647a457da4835eea08, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2d931ad334574a5fa93eebcf809cf48, type: 2}
     - target: {fileID: 919132149155446097, guid: 233540325298f3647a457da4835eea08, type: 3}
       propertyPath: m_Name
       value: courtyard_fountain
       objectReference: {fileID: 0}
+    - target: {fileID: 8206208775922907467, guid: 233540325298f3647a457da4835eea08, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35ad6871aa62c42179171bcd9e1438ed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 233540325298f3647a457da4835eea08, type: 3}
 --- !u!4 &1897682072 stripped
@@ -23704,7 +23773,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: fbb811ea21002eb46b0886e7acdb3224, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 665818c627db9d442a848cd6e96f2129, type: 2}
+      objectReference: {fileID: 2100000, guid: d43a56f936d6b4c48805001e42e0cc65, type: 2}
     - target: {fileID: 919132149155446097, guid: fbb811ea21002eb46b0886e7acdb3224, type: 3}
       propertyPath: m_Name
       value: GuardLetter
