@@ -162,6 +162,33 @@ MonoBehaviour:
   - Carpet
   - Grass
   Exists: 1
+--- !u!114 &-4130701830930085840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient Candy
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient Candy
+  Guid:
+    Data1: 1872278848
+    Data2: 1261486978
+    Data3: 1127488649
+    Data4: -1351132308
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
 --- !u!114 &-3763014787272012608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,10 +231,14 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 638530613072050264
+=======
+  lastModified: 638530606128163141
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
-    Value: 671296
+    Value: 1043744
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -224,10 +255,14 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638530613072085373
+=======
+  lastModified: 638530606128173149
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
-    Value: 1326
+    Value: 1404
   Exists: 1
 --- !u!114 &-541838829209311806
 MonoBehaviour:
@@ -284,13 +319,46 @@ MonoBehaviour:
   - {fileID: -8825699658268213349}
   - {fileID: -7443991810893153855}
   - {fileID: -8400466403516702612}
+  - {fileID: 671510748258202077}
+  - {fileID: -4130701830930085840}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
+<<<<<<< Updated upstream
   cacheTime: 638530613072085373
+=======
+  cacheTime: 638530606128173149
+>>>>>>> Stashed changes
   cacheVersion: 131591
+--- !u!114 &671510748258202077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/Wind
+  Guid:
+    Data1: -1247841741
+    Data2: 1175988450
+    Data3: 1146664875
+    Data4: -651520880
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8500
 --- !u!114 &1663244181956448934
 MonoBehaviour:
   m_ObjectHideFlags: 0
