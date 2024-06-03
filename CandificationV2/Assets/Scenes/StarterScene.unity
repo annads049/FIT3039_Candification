@@ -2747,11 +2747,81 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &77058008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2466676106611353756, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &77058013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77058008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &79359606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ca7ca8850a8798489d6553df69971a0, type: 3}
   m_PrefabInstance: {fileID: 1280676919}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &83609961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3355510304686687970, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &83609966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83609961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &90091695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,6 +3788,41 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!1 &118642479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1986544494456891775, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &118642484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118642479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &119834557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
@@ -4121,6 +4226,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
   m_PrefabInstance: {fileID: 414698426}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &147105958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4363104444560752723, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &147105963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147105958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &162304727 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1180012941830020648, guid: f45f6b93ed049ab4bad4aa70cde70192, type: 3}
@@ -6411,6 +6551,41 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 007dda9ba8c0f4c0bb3d74df39f02b12, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01308f5e206e54910a7e06a5e3ea28d4, type: 3}
+--- !u!1 &262704548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8796356245411194555, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &262704553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262704548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &267139901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c8894dbdf1168ed4d84caca3aacc3feb, type: 3}
@@ -9583,6 +9758,41 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 15
+--- !u!1 &475843697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -989898110205055358, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &475843702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475843697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &484488896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18382,6 +18592,41 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 15
+--- !u!1 &920017893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1628540284580504822, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &920017898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920017893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &944763520
 GameObject:
   m_ObjectHideFlags: 0
@@ -20266,6 +20511,41 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965590931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &967009360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4492244927951231420, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &967009365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967009360}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -36738,6 +37018,41 @@ Transform:
   m_Father: {fileID: 1738843583}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1501102583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7084032460556207893, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1501102588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501102583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1506542816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5cf4439eda89927469f7b3a65323a2f6, type: 3}
@@ -37943,18 +38258,18 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 11400000, guid: 680f724b8d5de974e91391e4a199901d, type: 2}
   eventHandlerComponentsAdded: 1
---- !u!1 &1605613078 stripped
+--- !u!1 &1602182730 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -3957782524123411102, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
-  m_PrefabInstance: {fileID: 1836325993}
+  m_CorrespondingSourceObject: {fileID: 8282317630941140716, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1605613083
+--- !u!114 &1602182735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605613078}
+  m_GameObject: {fileID: 1602182730}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -45303,6 +45618,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThronePillar
       objectReference: {fileID: 0}
+    - target: {fileID: 2902008074560218088, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902008074560218088, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
 --- !u!1 &1839832930
@@ -48997,18 +49320,18 @@ Transform:
   m_Father: {fileID: 1747203984}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1960682503 stripped
+--- !u!1 &1951503017 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -3957782524123411102, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
-  m_PrefabInstance: {fileID: 2065539398}
+  m_CorrespondingSourceObject: {fileID: -6413436743047151268, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1960682508
+--- !u!114 &1951503022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960682503}
+  m_GameObject: {fileID: 1951503017}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -51508,6 +51831,41 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 007dda9ba8c0f4c0bb3d74df39f02b12, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01308f5e206e54910a7e06a5e3ea28d4, type: 3}
+--- !u!1 &2037835564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4096996128419379618, guid: 1319698aa4a8981438701f1a170757d2, type: 3}
+  m_PrefabInstance: {fileID: 433724650}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2037835569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037835564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1268119065
+      Data2: 1080502704
+      Data3: 1650523834
+      Data4: -1673863734
+    Path: event:/Pillar Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2051145976
 GameObject:
   m_ObjectHideFlags: 0
@@ -52022,6 +52380,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
       propertyPath: m_Name
       value: ThronePillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902008074560218088, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902008074560218088, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d94fae5bda777654ea4cc8ff5b11eddf, type: 3}
