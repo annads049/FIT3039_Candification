@@ -54,7 +54,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 7
-  Length: 524
+  Length: 234
 --- !u!114 &-5740840989046471421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +70,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638530680499326174
+  lastModified: 638530975910675609
   FileSizes:
   - Name: Desktop
-    Value: 1404
+    Value: 1456
   Exists: 1
 --- !u!114 &-5571222695866077022
 MonoBehaviour:
@@ -102,6 +102,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 940
+--- !u!114 &-5253224243488633626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Throne Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Throne Hit
+  Guid:
+    Data1: -1713043900
+    Data2: 1306386722
+    Data3: 2092456075
+    Data4: 1659903038
+  Banks:
+  - {fileID: 4244541694279313048}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7
+  Length: 234
 --- !u!114 &-5046076005410476269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,12 +321,13 @@ MonoBehaviour:
   - {fileID: -5046076005410476269}
   - {fileID: -7752230864067682547}
   - {fileID: 8318977593690405992}
+  - {fileID: -5253224243488633626}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4244541694279313048}
   StringsBanks:
   - {fileID: -5740840989046471421}
-  cacheTime: 638530680499326174
+  cacheTime: 638530975910675609
   cacheVersion: 131591
 --- !u!114 &1038479961725590191
 MonoBehaviour:
@@ -424,10 +452,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638530680499326174
+  lastModified: 638530975910658315
   FileSizes:
   - Name: Desktop
-    Value: 1043744
+    Value: 1046016
   Exists: 1
 --- !u!114 &4367446795470263388
 MonoBehaviour:
