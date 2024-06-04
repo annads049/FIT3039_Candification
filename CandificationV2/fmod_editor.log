@@ -7,161 +7,13 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x299d98a08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x158ab1c08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1007584
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 38432
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x2ab17e7f4
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x2d840d728
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x2d840d7f4
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x2d840d82c
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x2d840d8fc
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x2ca40b708
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Pillar', format=5, channels=2, frequency=48000, lengthbytes=6400, lengthpcm=25164, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.320770.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1007584
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 38432
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x2ab17e7f4
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x2d840d728
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x2d840d7f4
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x2d840d82c
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x2d840d8fc
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x13391aba8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='3039_SND_Discovery', format=5, channels=2, frequency=48000, lengthbytes=16640, lengthpcm=87461, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.163405.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1007584
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 38432
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x2ab17e7f4
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x2d840d728
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x2d840d7f4
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x2d840d82c
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x2d840d8fc
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x13391aba8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Key Pickup', format=5, channels=2, frequency=48000, lengthbytes=8896, lengthpcm=92303, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.152893.
-[LOG] SoundI::release                          :  (0x169a43398)
-[LOG] SoundI::release                          :     Step 1 (0x137f183a8)
-[LOG] SoundI::release                          :  (0x137fd1098)
-[LOG] SoundI::release                          :     Step 2 (0x169acc818)
-[LOG] SoundI::release                          :  (0x169af7d18)
-[LOG] SoundI::release                          :     Step 3 (0x169ae4618)
-[LOG] SoundI::release                          :  (0x169a5c258)
-[LOG] SoundI::release                          :     Step 4 (0x169af4338)
-[LOG] SoundI::release                          :  (0x169acb5c8)
-[LOG] SoundI::release                          :     Step 5 (0x1415d7708)
-[LOG] SoundI::release                          :  (0x169af1f88)
-[LOG] SoundI::release                          :     Carpet Step 1 (0x137f28668)
-[LOG] SoundI::release                          :  (0x169a4e188)
-[LOG] SoundI::release                          :     Carpet Step 2 (0x169a62308)
-[LOG] SoundI::release                          :  (0x169aec0a8)
-[LOG] SoundI::release                          :     Carpet Step 3 (0x169ade6f8)
-[LOG] SoundI::release                          :  (0x169a1fb38)
-[LOG] SoundI::release                          :     Carpet Step 4 (0x169a444a8)
-[LOG] SoundI::release                          :  (0x137fcc228)
-[LOG] SoundI::release                          :     Carpet Step 5 (0x169a6f1b8)
-[LOG] SoundI::release                          :  (0x169aae688)
-[LOG] SoundI::release                          :     Grass Step 1 (0x169a802c8)
-[LOG] SoundI::release                          :  (0x169adf428)
-[LOG] SoundI::release                          :     Grass Step 2 (0x169add408)
-[LOG] SoundI::release                          :  (0x169a88328)
-[LOG] SoundI::release                          :     Grass Step 3 (0x169acd138)
-[LOG] SoundI::release                          :  (0x169a4ec98)
-[LOG] SoundI::release                          :     Grass Step 4 (0x169a5cea8)
-[LOG] SoundI::release                          :  (0x169a64518)
-[LOG] SoundI::release                          :     Grass Step 5 (0x137fdd4b8)
-[LOG] SoundI::release                          :  (0x169afa248)
-[LOG] SoundI::release                          :     Wind (0x169a2c8f8)
-[LOG] SoundI::release                          :  (0x2d6985a98)
-[LOG] SoundI::release                          :     Key Pickup (0x2d69ac728)
-[LOG] SoundI::release                          :  (0x2afb35d48)
-[LOG] SoundI::release                          :     3039_SND_Discovery (0x167d1a0f8)
-[LOG] SoundI::release                          :  (0x169af40a8)
-[LOG] SoundI::release                          :     Ambient Candy 1 (0x137f28d88)
-[LOG] SoundI::release                          : 3039_SND_L1_BGM (0x2a8958498)
-[LOG] SoundI::release                          :     3039_SND_L1_BGM (0x2d6542448)
-[LOG] SoundI::release                          :     3039_SND_L1_BGM (0x338362928)
-[LOG] SoundI::release                          :  (0x169aa1278)
-[LOG] SoundI::release                          :     Ambient Candy 2 (0x169ad2818)
-[LOG] SoundI::release                          :  (0x169aae148)
-[LOG] SoundI::release                          :     Ambient Candy 3 (0x169acdf98)
-[LOG] SoundI::release                          :  (0x133aaf6d8)
-[LOG] SoundI::release                          :     Pillar (0x133acd708)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -169,5 +21,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
