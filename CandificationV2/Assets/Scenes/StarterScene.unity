@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.24084255, g: 0.41682225, b: 0.60285264, a: 1}
+  m_IndirectSpecularColor: {r: 0.24084125, g: 0.41681987, b: 0.60284793, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11670,10 +11670,30 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -3302765407914173218, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60f57a4181e664696836dbd63abe95e3, type: 2}
+    - target: {fileID: -425565630206218756, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9e0369c25d4646268ebb1ee38c4262c, type: 2}
     - target: {fileID: 919132149155446097, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
       propertyPath: m_Name
       value: fireplace
       objectReference: {fileID: 0}
+    - target: {fileID: 2586607309129781981, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9e0369c25d4646268ebb1ee38c4262c, type: 2}
+    - target: {fileID: 3566390031902043909, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c9e0369c25d4646268ebb1ee38c4262c, type: 2}
+    - target: {fileID: 6240006516454883877, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 991e03822b8c845948145fbad7740a48, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9158e3dcd1dd6473fb1f82be0ec0333d, type: 3}
 --- !u!1 &421300046
