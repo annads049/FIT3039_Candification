@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.24084255, g: 0.41682225, b: 0.60285264, a: 1}
+  m_IndirectSpecularColor: {r: 0.24084125, g: 0.41681987, b: 0.60284793, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11100,6 +11100,84 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!1001 &374872796
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1236306896}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.049999993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.0995116
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.06
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.77
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.06
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd5d184a6127d4a2782d52de1092c33d, type: 2}
+    - target: {fileID: 919132149155446097, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+      propertyPath: m_Name
+      value: PaintingFrame (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+--- !u!4 &374872797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
+  m_PrefabInstance: {fileID: 374872796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &382797761 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1080728191954661681, guid: 5ba017fc90a2a0d40a5f5c772a2679cf, type: 3}
@@ -11822,7 +11900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.419999
+      value: 4.19648
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11867,7 +11945,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a58eefa197d9efa4e8d85b63eb003f4d, type: 2}
+      objectReference: {fileID: 2100000, guid: cd5d184a6127d4a2782d52de1092c33d, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Name
       value: PaintingFrame (1)
@@ -30584,6 +30662,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 08f17daf7b57ece4681e648d36a9e38d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d0661fffee8b42f297f3c4620143b04, type: 2}
     - target: {fileID: 919132149155446097, guid: 08f17daf7b57ece4681e648d36a9e38d, type: 3}
       propertyPath: m_Name
       value: Bottle (1)
@@ -38427,6 +38509,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.814
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f3a4cebbacb0ba14f87a1a774c2a1260, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d0661fffee8b42f297f3c4620143b04, type: 2}
     - target: {fileID: 919132149155446097, guid: f3a4cebbacb0ba14f87a1a774c2a1260, type: 3}
       propertyPath: m_Name
       value: Bottle_Type1 (1)
@@ -38997,7 +39083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.419999
+      value: 4.0995116
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39042,7 +39128,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a58eefa197d9efa4e8d85b63eb003f4d, type: 2}
+      objectReference: {fileID: 2100000, guid: cd5d184a6127d4a2782d52de1092c33d, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Name
       value: PaintingFrame (2)
@@ -41152,6 +41238,7 @@ Transform:
   - {fileID: 1230948922}
   - {fileID: 141855532}
   - {fileID: 463188359}
+  - {fileID: 374872797}
   m_Father: {fileID: 12141644}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41784,19 +41871,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.04999999
+      value: 0.0531341
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.76
+      value: 3.9956853
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.419999
+      value: 4.515842
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.359005
+      value: 18.359
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -41804,7 +41891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.951061
+      value: -9.9517
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41837,7 +41924,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a58eefa197d9efa4e8d85b63eb003f4d, type: 2}
+      objectReference: {fileID: 2100000, guid: cd5d184a6127d4a2782d52de1092c33d, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Name
       value: PaintingFrame
@@ -48705,7 +48792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.82
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -48713,7 +48800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.72
+      value: -30.4
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52544,6 +52631,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 08f17daf7b57ece4681e648d36a9e38d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d0661fffee8b42f297f3c4620143b04, type: 2}
     - target: {fileID: 919132149155446097, guid: 08f17daf7b57ece4681e648d36a9e38d, type: 3}
       propertyPath: m_Name
       value: Bottle
@@ -55259,11 +55350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.419999
+      value: 3.9770267
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.869003
+      value: 26.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55271,7 +55362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.928944
+      value: 9.93
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55304,7 +55395,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a58eefa197d9efa4e8d85b63eb003f4d, type: 2}
+      objectReference: {fileID: 2100000, guid: cd5d184a6127d4a2782d52de1092c33d, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
       propertyPath: m_Name
       value: PaintingFrame (3)
@@ -58009,6 +58100,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 08f17daf7b57ece4681e648d36a9e38d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d0661fffee8b42f297f3c4620143b04, type: 2}
     - target: {fileID: 919132149155446097, guid: 08f17daf7b57ece4681e648d36a9e38d, type: 3}
       propertyPath: m_Name
       value: Bottle (2)
@@ -67059,6 +67154,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f3a4cebbacb0ba14f87a1a774c2a1260, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d0661fffee8b42f297f3c4620143b04, type: 2}
     - target: {fileID: 919132149155446097, guid: f3a4cebbacb0ba14f87a1a774c2a1260, type: 3}
       propertyPath: m_Name
       value: Bottle_Type1
