@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.24084255, g: 0.41682225, b: 0.60285264, a: 1}
+  m_IndirectSpecularColor: {r: 0.24084125, g: 0.41681987, b: 0.60284793, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: af646091b0ba34045bd4331213c88fae, type: 2}
+    - target: {fileID: -5009542955728259291, guid: d8dc4a412cc14ca4a85d66bdc0244cab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4858876731829377961, guid: d8dc4a412cc14ca4a85d66bdc0244cab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2671,6 +2675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.739
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c80624cc7b097ca40bc8d884da4ae040, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ac24c18d435f4425389600e2dd45a98c, type: 2}
     - target: {fileID: 919132149155446097, guid: c80624cc7b097ca40bc8d884da4ae040, type: 3}
       propertyPath: m_Name
       value: Spear (1)
@@ -8302,6 +8310,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.003
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c80624cc7b097ca40bc8d884da4ae040, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ac24c18d435f4425389600e2dd45a98c, type: 2}
     - target: {fileID: 919132149155446097, guid: c80624cc7b097ca40bc8d884da4ae040, type: 3}
       propertyPath: m_Name
       value: Spear (2)
@@ -18059,6 +18071,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.001
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c80624cc7b097ca40bc8d884da4ae040, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ac24c18d435f4425389600e2dd45a98c, type: 2}
     - target: {fileID: 919132149155446097, guid: c80624cc7b097ca40bc8d884da4ae040, type: 3}
       propertyPath: m_Name
       value: Spear
@@ -48391,7 +48407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.23
+      value: 19.13
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -48399,7 +48415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.26
+      value: -4.94
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54150,10 +54166,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7738880376516220918, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f33fa157b29d424396ff5f7cf7426b4, type: 2}
+    - target: {fileID: -5638336836388850176, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f33fa157b29d424396ff5f7cf7426b4, type: 2}
+    - target: {fileID: -4516266355665112679, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f33fa157b29d424396ff5f7cf7426b4, type: 2}
+    - target: {fileID: 330048484975305939, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f33fa157b29d424396ff5f7cf7426b4, type: 2}
     - target: {fileID: 919132149155446097, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
       propertyPath: m_Name
       value: Guards_Hanger
       objectReference: {fileID: 0}
+    - target: {fileID: 1279189079599760721, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f33fa157b29d424396ff5f7cf7426b4, type: 2}
+    - target: {fileID: 4531912228224351498, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 71e2dab28cba34a6eb97ca56edaa5bd4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397237fd25ecddc489b97e966b82a43e, type: 3}
 --- !u!1 &1593493624 stripped
