@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7.8
   Length: 165
+--- !u!114 &-8149278539225294784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Door Locked
+  m_EditorClassIdentifier: 
+  Path: event:/Door Locked
+  Guid:
+    Data1: 1186059206
+    Data2: 1109575090
+    Data3: -1709954681
+    Data4: 1419857459
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &-8145805448948668075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +189,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3707
+  Length: 2327
 --- !u!114 &-5740840989046471421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,10 +495,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638602104446377382
+  lastModified: 638602111179898234
   FileSizes:
   - Name: Desktop
-    Value: 1098176
+    Value: 1149312
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -488,10 +515,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638602104446402448
+  lastModified: 638602111179918239
   FileSizes:
   - Name: Desktop
-    Value: 1784
+    Value: 1832
   Exists: 1
 --- !u!114 &-2461747363018176054
 MonoBehaviour:
@@ -746,12 +773,13 @@ MonoBehaviour:
   - {fileID: -2062654543959121470}
   - {fileID: -2461747363018176054}
   - {fileID: -490578612271201638}
+  - {fileID: -8149278539225294784}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638602104446402448
+  cacheTime: 638602111179918239
   cacheVersion: 131591
 --- !u!114 &978479486602224721
 MonoBehaviour:
