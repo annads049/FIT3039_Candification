@@ -162,7 +162,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2100
+  Length: 3707
 --- !u!114 &-5740840989046471421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,10 +468,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638592765746354375
+  lastModified: 638602104446377382
   FileSizes:
   - Name: Desktop
-    Value: 1043040
+    Value: 1098176
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -488,10 +488,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638531359504977346
+  lastModified: 638602104446402448
   FileSizes:
   - Name: Desktop
-    Value: 1730
+    Value: 1784
   Exists: 1
 --- !u!114 &-2461747363018176054
 MonoBehaviour:
@@ -682,6 +682,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 9
   Length: 700
+--- !u!114 &-490578612271201638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Archway Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Archway Hit
+  Guid:
+    Data1: 1005770178
+    Data2: 1322257678
+    Data3: -414764411
+    Data4: 1515528277
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7
+  Length: 480
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,12 +745,13 @@ MonoBehaviour:
   - {fileID: 978479486602224721}
   - {fileID: -2062654543959121470}
   - {fileID: -2461747363018176054}
+  - {fileID: -490578612271201638}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638592765746354375
+  cacheTime: 638602104446402448
   cacheVersion: 131591
 --- !u!114 &978479486602224721
 MonoBehaviour:
@@ -988,7 +1016,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 7
-  Length: 228
+  Length: 480
 --- !u!114 &5246238109692643992
 MonoBehaviour:
   m_ObjectHideFlags: 0
