@@ -453,6 +453,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7.8
   Length: 670
+--- !u!114 &-4152878564800054120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Shelf Closing
+  m_EditorClassIdentifier: 
+  Path: event:/Shelf Closing
+  Guid:
+    Data1: 1617997485
+    Data2: 1292879399
+    Data3: -454750069
+    Data4: 1695507534
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 6
+  Length: 1485
 --- !u!114 &-3983022409813114138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,10 +549,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638616996124481176
+  lastModified: 638617053773356020
   FileSizes:
   - Name: Desktop
-    Value: 1232576
+    Value: 1330688
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -542,10 +569,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638616996124501151
+  lastModified: 638617053773386015
   FileSizes:
   - Name: Desktop
-    Value: 2076
+    Value: 2278
   Exists: 1
 --- !u!114 &-1825991348727144053
 MonoBehaviour:
@@ -752,12 +779,16 @@ MonoBehaviour:
   - {fileID: -3997874987531894}
   - {fileID: 3261920616622626399}
   - {fileID: 8448087199374206616}
+  - {fileID: -4152878564800054120}
+  - {fileID: 8619613219126902802}
+  - {fileID: 4635474020591776829}
+  - {fileID: 305357056614042750}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638616996124501151
+  cacheTime: 638617053773386015
   cacheVersion: 131591
 --- !u!114 &155791584020826678
 MonoBehaviour:
@@ -786,6 +817,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7.8
   Length: 360
+--- !u!114 &305357056614042750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cupboard Opening
+  m_EditorClassIdentifier: 
+  Path: event:/Cupboard Opening
+  Guid:
+    Data1: 1824910841
+    Data2: 1150913335
+    Data3: -717527377
+    Data4: 8620016
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 6
+  Length: 1657
 --- !u!114 &1006573918010834112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,6 +1216,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 220
+--- !u!114 &4635474020591776829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cupboard Closing
+  m_EditorClassIdentifier: 
+  Path: event:/Cupboard Closing
+  Guid:
+    Data1: 1626808255
+    Data2: 1327645254
+    Data3: 343458722
+    Data4: -107039290
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 6
+  Length: 1721
 --- !u!114 &5195679443183684919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1293,6 +1378,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7.8
   Length: 830
+--- !u!114 &8619613219126902802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Shelf Opening
+  m_EditorClassIdentifier: 
+  Path: event:/Shelf Opening
+  Guid:
+    Data1: 1918476466
+    Data2: 1337853881
+    Data3: 426666135
+    Data4: 1630267367
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 6
+  Length: 2282
 --- !u!114 &9022858152542486031
 MonoBehaviour:
   m_ObjectHideFlags: 0
