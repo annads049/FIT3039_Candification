@@ -3,7 +3,62 @@ guid: e02ebd4523cc62c4d855e40b9b6365c0
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed_plank_MAT
+    second: {fileID: 2100000, guid: 68764959c0429bd4dbb8027eeedc7ee4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chain_MAT
+    second: {fileID: 2100000, guid: 1ff2515770a62bc47a1caa08695e3371, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dungeon_bed_MAT
+    second: {fileID: 2100000, guid: 73c983d1556b2ed4c9679cbfc23d1fa0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dungeon_cell_MAT
+    second: {fileID: 2100000, guid: aa9f15c4bc74b76418e40464b72eb067, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dungeon_chair_MAT
+    second: {fileID: 2100000, guid: b0ee32c3873c0f141aebc1c7ca2d3d8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dungeon_halfwall_MAT
+    second: {fileID: 2100000, guid: 24c469fc0bb34fb41b22f9b9cfd79321, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dungeon_potty_MAT
+    second: {fileID: 2100000, guid: f523074a565e7ae46aee46b65c9edf4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dungeon_walls_extra_MAT
+    second: {fileID: 2100000, guid: ef7d49702b094cd489fdb218a5ead731, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shackle_MAT
+    second: {fileID: 2100000, guid: d03673d583a6e8a45afc2d4e9ed9d71f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: db9d4e19b00ea8c40bc2731d14538cce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_hook_MAT
+    second: {fileID: 2100000, guid: a50a093ca3f868e4489cbe5b2b5f653f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -37,7 +92,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
