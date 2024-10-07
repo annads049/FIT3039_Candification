@@ -7,7 +7,7 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x321e1fc08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x135218808 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,6 +18,64 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SoundI::release                          :  (0x32877ade8)
+[LOG] SoundI::release                          :     Step 1 (0x127452bb8)
+[LOG] SoundI::release                          :  (0x328518fd8)
+[LOG] SoundI::release                          :     Step 2 (0x1274a50c8)
+[LOG] SoundI::release                          :  (0x349d432b8)
+[LOG] SoundI::release                          :     Step 3 (0x349d48868)
+[LOG] SoundI::release                          :  (0x1274610a8)
+[LOG] SoundI::release                          :     Step 4 (0x1274923f8)
+[LOG] SoundI::release                          :  (0x345455948)
+[LOG] SoundI::release                          :     Step 5 (0x345455ab8)
+[LOG] SoundI::release                          :  (0x345457e18)
+[LOG] SoundI::release                          :     Carpet Step 1 (0x345455628)
+[LOG] SoundI::release                          :  (0x32877aaf8)
+[LOG] SoundI::release                          :     Carpet Step 2 (0x12749d688)
+[LOG] SoundI::release                          :  (0x348894e48)
+[LOG] SoundI::release                          :     Carpet Step 3 (0x1274875c8)
+[LOG] SoundI::release                          :  (0x3287b08a8)
+[LOG] SoundI::release                          :     Carpet Step 4 (0x12746b7f8)
+[LOG] SoundI::release                          :  (0x349d2e838)
+[LOG] SoundI::release                          :     Carpet Step 5 (0x349d48af8)
+[LOG] SoundI::release                          :  (0x12747e208)
+[LOG] SoundI::release                          :     Grass Step 1 (0x1274579a8)
+[LOG] SoundI::release                          :  (0x127495a98)
+[LOG] SoundI::release                          :     Grass Step 2 (0x127492b18)
+[LOG] SoundI::release                          :  (0x348832658)
+[LOG] SoundI::release                          :     Grass Step 3 (0x127471768)
+[LOG] SoundI::release                          :  (0x133ef6d38)
+[LOG] SoundI::release                          :     Grass Step 4 (0x133ef6ea8)
+[LOG] SoundI::release                          :  (0x345458418)
+[LOG] SoundI::release                          :     Grass Step 5 (0x345457af8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
