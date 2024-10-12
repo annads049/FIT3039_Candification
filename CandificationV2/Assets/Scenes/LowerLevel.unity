@@ -979,6 +979,7 @@ GameObject:
   - component: {fileID: 137022290}
   - component: {fileID: 137022289}
   - component: {fileID: 137022288}
+  - component: {fileID: 137022291}
   m_Layer: 0
   m_Name: kitchen_stoolS (1)
   m_TagString: Untagged
@@ -1065,6 +1066,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137022286}
   m_Mesh: {fileID: 7414123108640039165, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &137022291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137022286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.4
+  OverrideMaxDistance: 4.02
 --- !u!1 &144089833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1477753201289436049, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -5324,7 +5355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.9
+      value: -22.31
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5332,7 +5363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 58.7
+      value: 12.76
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6105,6 +6136,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372713838}
   m_Mesh: {fileID: 7853531267264793305, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!1 &399032548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3cf9f98e511c80a408192f11cfb5c695, type: 3}
+  m_PrefabInstance: {fileID: 71453305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &399032552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399032548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1459830955
+      Data2: 1148950533
+      Data3: 605564558
+      Data4: -1184043152
+    Path: event:/Statue Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &408251138
 GameObject:
   m_ObjectHideFlags: 0
@@ -10384,7 +10450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696196321}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2900772, y: 1.181, z: 5.519}
+  m_LocalPosition: {x: 3.2900772, y: 1.197, z: 5.519}
   m_LocalScale: {x: 0.23049185, y: 0.33511147, z: 0.23049185}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11823,6 +11889,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799177424}
   m_Mesh: {fileID: -2484178460185415977, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!1 &800930563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9b05091b2028b4eab60d71d19d5a3f, type: 3}
+  m_PrefabInstance: {fileID: 575616577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &800930567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800930563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -150573957
+      Data2: 1122080264
+      Data3: 1697909645
+      Data4: 1097963983
+    Path: event:/Table Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1.84
+  OverrideMaxDistance: 9.16
 --- !u!1001 &806221928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12066,6 +12167,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814926347}
   m_Mesh: {fileID: -2643173543783292932, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!1 &816456895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 646a9fdd69d76514c9bfc77aa10cbfa0, type: 3}
+  m_PrefabInstance: {fileID: 689191014}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &819432306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3554860655520679647, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -12379,7 +12485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852425901}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.838077, y: 1.174, z: 5.259}
+  m_LocalPosition: {x: 3.838077, y: 1.188, z: 5.259}
   m_LocalScale: {x: 0.23049185, y: 0.33511147, z: 0.23049185}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19438,6 +19544,41 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 7
+--- !u!1 &1352861322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9b05091b2028b4eab60d71d19d5a3f, type: 3}
+  m_PrefabInstance: {fileID: 722258655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1352861326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352861322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -150573957
+      Data2: 1122080264
+      Data3: 1697909645
+      Data4: 1097963983
+    Path: event:/Table Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1.84
+  OverrideMaxDistance: 9.16
 --- !u!1 &1352966816 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3295199995363717107, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -25100,6 +25241,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 646a9fdd69d76514c9bfc77aa10cbfa0, type: 3}
   m_PrefabInstance: {fileID: 689191014}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1480089207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816456895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1459830955
+      Data2: 1148950533
+      Data3: 605564558
+      Data4: -1184043152
+    Path: event:/Statue Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &1498098763
 GameObject:
   m_ObjectHideFlags: 0
@@ -27190,6 +27361,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668251379}
   m_Mesh: {fileID: 48659126932902298, guid: 462e61213df3344b4893ca2428fb0edb, type: 3}
+--- !u!1 &1670614603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 646a9fdd69d76514c9bfc77aa10cbfa0, type: 3}
+  m_PrefabInstance: {fileID: 1574831281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1676787801
 GameObject:
   m_ObjectHideFlags: 0
@@ -28512,6 +28688,7 @@ GameObject:
   - component: {fileID: 1747181571}
   - component: {fileID: 1747181570}
   - component: {fileID: 1747181569}
+  - component: {fileID: 1747181572}
   m_Layer: 0
   m_Name: kitchen_stoolS (1)
   m_TagString: Untagged
@@ -28598,6 +28775,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747181567}
   m_Mesh: {fileID: 7414123108640039165, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &1747181572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747181567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.4
+  OverrideMaxDistance: 4.02
 --- !u!1 &1748639489
 GameObject:
   m_ObjectHideFlags: 0
@@ -28780,6 +28987,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
       propertyPath: m_Name
       value: kitchen_props_kit
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2527135179191037085, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -32135,6 +32346,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 646a9fdd69d76514c9bfc77aa10cbfa0, type: 3}
   m_PrefabInstance: {fileID: 1574831281}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2058922368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670614603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1459830955
+      Data2: 1148950533
+      Data3: 605564558
+      Data4: -1184043152
+    Path: event:/Statue Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &2059985712
 GameObject:
   m_ObjectHideFlags: 0
@@ -34126,6 +34367,7 @@ GameObject:
   - component: {fileID: 1208095142724048318}
   - component: {fileID: 2527135179068532106}
   - component: {fileID: 3755901996042872496}
+  - component: {fileID: 8237730150388758767}
   m_Layer: 0
   m_Name: kitchen_stoolS
   m_TagString: Untagged
@@ -34133,6 +34375,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8237730150388758767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237730150388758766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.4
+  OverrideMaxDistance: 4.02
 --- !u!1 &8237730150866204658
 GameObject:
   m_ObjectHideFlags: 0
@@ -34145,6 +34417,7 @@ GameObject:
   - component: {fileID: 1208095143050402466}
   - component: {fileID: 2527135178591054486}
   - component: {fileID: 3755901996386036140}
+  - component: {fileID: 8237730150866204659}
   m_Layer: 0
   m_Name: kitchen_stoolS
   m_TagString: Untagged
@@ -34152,6 +34425,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8237730150866204659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237730150866204658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.4
+  OverrideMaxDistance: 4.02
 --- !u!64 &8349162457482119366
 MeshCollider:
   m_ObjectHideFlags: 0
