@@ -217,6 +217,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 6
   Length: 311
+--- !u!114 &-6416758459570553935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bucket
+  m_EditorClassIdentifier: 
+  Path: event:/Bucket
+  Guid:
+    Data1: 1660460457
+    Data2: 1169430235
+    Data3: -1417218384
+    Data4: -872793662
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.8
+  Length: 275
 --- !u!114 &-6300175907410473767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,10 +576,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638617053773356020
+  lastModified: 638643566775710563
   FileSizes:
   - Name: Desktop
-    Value: 1330688
+    Value: 1457440
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -569,11 +596,38 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638617053773386015
+  lastModified: 638643566775730598
   FileSizes:
   - Name: Desktop
-    Value: 2278
+    Value: 2512
   Exists: 1
+--- !u!114 &-1959480188306966445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bottle
+  m_EditorClassIdentifier: 
+  Path: event:/Bottle
+  Guid:
+    Data1: -627906694
+    Data2: 1222766853
+    Data3: 99397558
+    Data4: 886102088
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.2000003
+  Length: 696
 --- !u!114 &-1825991348727144053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,12 +837,18 @@ MonoBehaviour:
   - {fileID: 8619613219126902802}
   - {fileID: 4635474020591776829}
   - {fileID: 305357056614042750}
+  - {fileID: 7924937474465397262}
+  - {fileID: -6416758459570553935}
+  - {fileID: 7092890580393414977}
+  - {fileID: -1959480188306966445}
+  - {fileID: 2319896659375749609}
+  - {fileID: 5632086207834645158}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638617053773386015
+  cacheTime: 638643566775730598
   cacheVersion: 131591
 --- !u!114 &155791584020826678
 MonoBehaviour:
@@ -979,6 +1039,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7
   Length: 234
+--- !u!114 &2319896659375749609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mix Potion
+  m_EditorClassIdentifier: 
+  Path: event:/Mix Potion
+  Guid:
+    Data1: -755064164
+    Data2: 1190696946
+    Data3: -2086996033
+    Data4: 1994348464
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.2000003
+  Length: 1970
 --- !u!114 &2528167674265249873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,6 +1357,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12000
+--- !u!114 &5632086207834645158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Drink Potion
+  m_EditorClassIdentifier: 
+  Path: event:/Drink Potion
+  Guid:
+    Data1: -717793374
+    Data2: 1231756903
+    Data3: 1905626021
+    Data4: 1865609555
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.2000003
+  Length: 2398
 --- !u!114 &5635184978296754044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,6 +1438,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 9
   Length: 700
+--- !u!114 &7092890580393414977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bowl
+  m_EditorClassIdentifier: 
+  Path: event:/Bowl
+  Guid:
+    Data1: 287554701
+    Data2: 1187286262
+    Data3: -253754709
+    Data4: 24368965
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.8
+  Length: 370
+--- !u!114 &7924937474465397262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Barrel
+  m_EditorClassIdentifier: 
+  Path: event:/Barrel
+  Guid:
+    Data1: -1580939906
+    Data2: 1268674873
+    Data3: 330747539
+    Data4: 1347226725
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.8
+  Length: 275
 --- !u!114 &8318977593690405992
 MonoBehaviour:
   m_ObjectHideFlags: 0

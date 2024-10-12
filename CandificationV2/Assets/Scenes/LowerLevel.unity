@@ -1790,13 +1790,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetMaterialColor
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 31ae64039845b305
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000600000009000000
+        actionHashCodes: 31ae64039845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1808,6 +1810,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1821,6 +1831,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -1854,7 +1876,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -1870,7 +1898,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f00000001000000
+        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - materialIndex
@@ -1881,8 +1909,12 @@ MonoBehaviour:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000000000000000000000000000000000000010000000100000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     - name: State 4
       description: 
       colorIndex: 0
@@ -1900,13 +1932,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetMaterialColor
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 31ae64039845b305
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000600000009000000
+        actionHashCodes: 31ae64039845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1918,6 +1952,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1931,6 +1973,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -1964,7 +2018,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -1980,7 +2040,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f00000001000000
+        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - materialIndex
@@ -1991,8 +2051,12 @@ MonoBehaviour:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000000000000000000000000000000000000010000000100000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     - name: State 5
       description: 
       colorIndex: 0
@@ -2010,13 +2074,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetMaterialColor
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 31ae64039845b305
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000600000009000000
+        actionHashCodes: 31ae64039845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2028,6 +2094,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2041,6 +2115,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -2074,7 +2160,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -2090,7 +2182,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f00000001000000
+        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - materialIndex
@@ -2101,8 +2193,12 @@ MonoBehaviour:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000000000000000000000000000000000000010000000100000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     - name: State 6
       description: 
       colorIndex: 0
@@ -2120,13 +2216,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetMaterialColor
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 31ae64039845b305
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000600000009000000
+        actionHashCodes: 31ae64039845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2138,6 +2236,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2151,6 +2257,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -2184,7 +2302,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -2200,7 +2324,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f00000001000000
+        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - materialIndex
@@ -2211,8 +2335,12 @@ MonoBehaviour:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000000000000000000000000000000000000010000000100000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     - name: State 7
       description: 
       colorIndex: 0
@@ -2230,13 +2358,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetMaterialColor
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 31ae64039845b305
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000600000009000000
+        actionHashCodes: 31ae64039845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2248,6 +2378,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2261,6 +2399,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -2294,7 +2444,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -2310,7 +2466,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f00000001000000
+        paramDataType: 1400000010000000200000001200000019000000010000000f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - materialIndex
@@ -2321,8 +2477,12 @@ MonoBehaviour:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000000000000000000000000000100000001000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000000000000000000000000000000000000010000000100000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     - name: State 8
       description: 
       colorIndex: 0
@@ -2341,14 +2501,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SetMaterialColor
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000009000000
-        actionHashCodes: 27fbe10331ae64039845b305
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000090000000c000000
+        actionHashCodes: 27fbe10331ae64039845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2360,6 +2522,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2373,6 +2543,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -2418,7 +2600,13 @@ MonoBehaviour:
           networkSync: 0
           value: 1
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -2434,7 +2622,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000001400000010000000200000001200000019000000010000000f0000000f00000001000000
+        paramDataType: 1100000011000000010000001400000010000000200000001200000019000000010000000f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - boolVariable
         - boolValue
@@ -2448,8 +2636,12 @@ MonoBehaviour:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000000000000000000000000000000000001000000000000000100000002000000
-        paramByteDataSize: 000000000000000001000000000000000000000000000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000010000000000000000000000000000000000000000000000000000000100000000000000010000000200000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     events:
     - name: Interaction
       isSystemEvent: 0
@@ -2821,13 +3013,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.SetMaterialColor
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 9845b30531ae6403
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000009000000
+        actionHashCodes: 9845b30531ae64033416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2839,6 +3033,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2852,6 +3054,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -2885,7 +3099,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -2901,7 +3121,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f00000001000000140000001000000020000000120000001900000001000000
+        paramDataType: 0f0000000f0000000100000014000000100000002000000012000000190000000100000014000000120000001c00000012000000
         paramName:
         - floatVariable
         - floatValue
@@ -2912,8 +3132,12 @@ MonoBehaviour:
         - namedColor
         - color
         - everyFrame
-        paramDataPos: 000000000100000000000000000000000000000000000000000000000000000001000000
-        paramByteDataSize: 000000000000000001000000000000000000000000000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000010000000000000000000000000000000000000000000000000000000100000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000
     - name: Yellow
       description: 
       colorIndex: 0
@@ -3023,12 +3247,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetMaterialColor
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 31ae6403
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000006000000
+        actionHashCodes: 31ae64033416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -3040,6 +3266,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -3053,6 +3287,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -3074,7 +3320,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -3090,7 +3342,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001000000020000000120000001900000001000000
+        paramDataType: 14000000100000002000000012000000190000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - materialIndex
@@ -3098,8 +3350,12 @@ MonoBehaviour:
         - namedColor
         - color
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000000000000000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000000000000000000000000000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000100000000000000000000000000000000000000
     events:
     - name: Interaction
       isSystemEvent: 0
@@ -5071,6 +5327,7 @@ GameObject:
   - component: {fileID: 228895091}
   - component: {fileID: 228895090}
   - component: {fileID: 228895089}
+  - component: {fileID: 228895092}
   m_Layer: 0
   m_Name: kitchen_shelve (1)
   m_TagString: Untagged
@@ -5157,6 +5414,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228895087}
   m_Mesh: {fileID: 7853531267264793305, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &228895092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228895087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1580939906
+      Data2: 1268674873
+      Data3: 330747539
+      Data4: 1347226725
+    Path: event:/Barrel
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 7.8
 --- !u!1 &238303382
 GameObject:
   m_ObjectHideFlags: 0
@@ -5591,6 +5878,7 @@ GameObject:
   - component: {fileID: 287945625}
   - component: {fileID: 287945624}
   - component: {fileID: 287945623}
+  - component: {fileID: 287945626}
   m_Layer: 0
   m_Name: bowl (4)
   m_TagString: Untagged
@@ -5677,6 +5965,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287945621}
   m_Mesh: {fileID: 2542112853833809232, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &287945626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287945621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 287554701
+      Data2: 1187286262
+      Data3: -253754709
+      Data4: 24368965
+    Path: event:/Bowl
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.16
+  OverrideMaxDistance: 1.83
 --- !u!1 &295227907
 GameObject:
   m_ObjectHideFlags: 0
@@ -6050,6 +6368,7 @@ GameObject:
   - component: {fileID: 372713842}
   - component: {fileID: 372713841}
   - component: {fileID: 372713840}
+  - component: {fileID: 372713843}
   m_Layer: 0
   m_Name: kitchen_shelve (2)
   m_TagString: Untagged
@@ -6136,6 +6455,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372713838}
   m_Mesh: {fileID: 7853531267264793305, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &372713843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372713838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1580939906
+      Data2: 1268674873
+      Data3: 330747539
+      Data4: 1347226725
+    Path: event:/Barrel
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 7.8
 --- !u!1 &399032548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3cf9f98e511c80a408192f11cfb5c695, type: 3}
@@ -6291,6 +6640,7 @@ GameObject:
   - component: {fileID: 453464017}
   - component: {fileID: 453464016}
   - component: {fileID: 453464015}
+  - component: {fileID: 453464018}
   m_Layer: 0
   m_Name: barrel (4)
   m_TagString: Untagged
@@ -6377,6 +6727,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453464013}
   m_Mesh: {fileID: -2643173543783292932, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &453464018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453464013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1580939906
+      Data2: 1268674873
+      Data3: 330747539
+      Data4: 1347226725
+    Path: event:/Barrel
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.6
+  OverrideMaxDistance: 6.16
 --- !u!1 &458306907
 GameObject:
   m_ObjectHideFlags: 0
@@ -9145,22 +9525,44 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 9845b305
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 9845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Bottle
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -9181,7 +9583,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -9191,13 +9599,17 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f00000001000000
+        paramDataType: 0f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000100000000000000
-        paramByteDataSize: 000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000010000000000000000000000000000000000000001000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000000000000
     events:
     - name: Interaction
       isSystemEvent: 0
@@ -11802,6 +12214,7 @@ GameObject:
   - component: {fileID: 799177428}
   - component: {fileID: 799177427}
   - component: {fileID: 799177426}
+  - component: {fileID: 799177429}
   m_Layer: 0
   m_Name: stove (3)
   m_TagString: Untagged
@@ -11889,6 +12302,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799177424}
   m_Mesh: {fileID: -2484178460185415977, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &799177429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799177424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1713043900
+      Data2: 1306386722
+      Data3: 2092456075
+      Data4: 1659903038
+    Path: event:/Throne Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.43
+  OverrideMaxDistance: 4.44
 --- !u!1 &800930563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9b05091b2028b4eab60d71d19d5a3f, type: 3}
@@ -13499,6 +13942,7 @@ GameObject:
   - component: {fileID: 928820629}
   - component: {fileID: 928820628}
   - component: {fileID: 928820627}
+  - component: {fileID: 928820630}
   m_Layer: 0
   m_Name: bucket (2)
   m_TagString: Untagged
@@ -13585,6 +14029,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928820625}
   m_Mesh: {fileID: 78763479650361965, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &928820630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928820625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1660460457
+      Data2: 1169430235
+      Data3: -1417218384
+      Data4: -872793662
+    Path: event:/Bucket
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.64
+  OverrideMaxDistance: 6.41
 --- !u!1 &933123556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5809491174229896408, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -14008,6 +14482,7 @@ GameObject:
   - component: {fileID: 982100368}
   - component: {fileID: 982100367}
   - component: {fileID: 982100366}
+  - component: {fileID: 982100369}
   m_Layer: 0
   m_Name: barrel (5)
   m_TagString: Untagged
@@ -14094,6 +14569,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982100364}
   m_Mesh: {fileID: -2643173543783292932, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &982100369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982100364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1580939906
+      Data2: 1268674873
+      Data3: 330747539
+      Data4: 1347226725
+    Path: event:/Barrel
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.6
+  OverrideMaxDistance: 6.16
 --- !u!1 &990661134
 GameObject:
   m_ObjectHideFlags: 0
@@ -14946,14 +15451,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.UiTextSetText
         - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000500000009000000
-        actionHashCodes: b2cf100009fbab0448c01101
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000005000000090000000c000000
+        actionHashCodes: b2cf100009fbab0448c011013416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -14973,6 +15480,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 318623244}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -14986,6 +15501,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Yuck, hopefully that works.
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Drink Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -15018,7 +15545,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -15029,7 +15562,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000140000001200000011000000010000000f0000001700000001000000
+        paramDataType: 1400000011000000110000000100000001000000140000001200000011000000010000000f000000170000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - activate
@@ -15043,8 +15576,12 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 000000000000000001000000000000000100000001000000000000000200000002000000000000000000000003000000
-        paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000100000000000000010000000100000000000000020000000200000000000000000000000300000002000000010000000000000002000000
+        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     - name: State 3
       description: 
       colorIndex: 0
@@ -16719,22 +17256,44 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 9845b305
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 9845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Bottle
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -16755,7 +17314,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -16765,13 +17330,17 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f00000001000000
+        paramDataType: 0f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000100000000000000
-        paramByteDataSize: 000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000010000000000000000000000000000000000000001000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000000000000
     events:
     - name: Interaction
       isSystemEvent: 0
@@ -18843,14 +19412,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.SetFloatValue
         - HutongGames.PlayMaker.Actions.SetMaterialColor
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000006000000
-        actionHashCodes: 9845b3059845b30531ae6403
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000060000000c000000
+        actionHashCodes: 9845b3059845b30531ae64033416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -18862,6 +19433,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 168080744}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -18875,6 +19454,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: _Color
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Mix Potion
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -18920,7 +19511,13 @@ MonoBehaviour:
           value: 0
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams:
         - useVariable: 0
           name: 
@@ -18936,7 +19533,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f000000010000000f0000000f00000001000000140000001000000020000000120000001900000001000000
+        paramDataType: 0f0000000f000000010000000f0000000f0000000100000014000000100000002000000012000000190000000100000014000000120000001c00000012000000
         paramName:
         - floatVariable
         - floatValue
@@ -18950,8 +19547,12 @@ MonoBehaviour:
         - namedColor
         - color
         - everyFrame
-        paramDataPos: 000000000100000000000000020000000300000001000000000000000000000000000000000000000000000002000000
-        paramByteDataSize: 000000000000000001000000000000000000000001000000000000000000000000000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000010000000000000002000000030000000100000000000000000000000000000000000000000000000200000001000000010000000000000002000000
+        paramByteDataSize: 00000000000000000100000000000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000
     events:
     - name: Interact
       isSystemEvent: 0
@@ -19202,6 +19803,7 @@ GameObject:
   - component: {fileID: 1281212002}
   - component: {fileID: 1281212001}
   - component: {fileID: 1281212000}
+  - component: {fileID: 1281212003}
   m_Layer: 0
   m_Name: barrel (8)
   m_TagString: Untagged
@@ -19288,6 +19890,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281211998}
   m_Mesh: {fileID: -2643173543783292932, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &1281212003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281211998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1580939906
+      Data2: 1268674873
+      Data3: 330747539
+      Data4: 1347226725
+    Path: event:/Barrel
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.6
+  OverrideMaxDistance: 6.16
 --- !u!1 &1302767714
 GameObject:
   m_ObjectHideFlags: 0
@@ -19300,6 +19932,7 @@ GameObject:
   - component: {fileID: 1302767718}
   - component: {fileID: 1302767717}
   - component: {fileID: 1302767716}
+  - component: {fileID: 1302767719}
   m_Layer: 0
   m_Name: bucket (4)
   m_TagString: Untagged
@@ -19386,6 +20019,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302767714}
   m_Mesh: {fileID: 78763479650361965, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &1302767719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302767714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1660460457
+      Data2: 1169430235
+      Data3: -1417218384
+      Data4: -872793662
+    Path: event:/Bucket
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.64
+  OverrideMaxDistance: 6.41
 --- !u!1 &1311257144
 GameObject:
   m_ObjectHideFlags: 0
@@ -25503,6 +26166,7 @@ GameObject:
   - component: {fileID: 1545871426}
   - component: {fileID: 1545871425}
   - component: {fileID: 1545871424}
+  - component: {fileID: 1545871427}
   m_Layer: 0
   m_Name: bucket (5)
   m_TagString: Untagged
@@ -25589,6 +26253,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545871422}
   m_Mesh: {fileID: 78763479650361965, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &1545871427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545871422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1660460457
+      Data2: 1169430235
+      Data3: -1417218384
+      Data4: -872793662
+    Path: event:/Bucket
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.64
+  OverrideMaxDistance: 6.41
 --- !u!1 &1551969709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4137891484125877075, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -26040,22 +26734,44 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetFloatValue
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 9845b305
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 9845b3053416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Bottle
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -26076,7 +26792,13 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -26086,13 +26808,17 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f00000001000000
+        paramDataType: 0f0000000f0000000100000014000000120000001c00000012000000
         paramName:
         - floatVariable
         - floatValue
         - everyFrame
-        paramDataPos: 000000000100000000000000
-        paramByteDataSize: 000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000010000000000000000000000000000000000000001000000
+        paramByteDataSize: 00000000000000000100000000000000000000000000000000000000
     events:
     - name: Interact
       isSystemEvent: 0
@@ -26557,6 +27283,7 @@ GameObject:
   - component: {fileID: 1616454265}
   - component: {fileID: 1616454264}
   - component: {fileID: 1616454263}
+  - component: {fileID: 1616454266}
   m_Layer: 0
   m_Name: stove (2)
   m_TagString: Untagged
@@ -26644,6 +27371,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616454261}
   m_Mesh: {fileID: -2484178460185415977, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &1616454266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616454261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1713043900
+      Data2: 1306386722
+      Data3: 2092456075
+      Data4: 1659903038
+    Path: event:/Throne Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.43
+  OverrideMaxDistance: 4.44
 --- !u!1 &1621721124
 GameObject:
   m_ObjectHideFlags: 0
@@ -32388,6 +33145,7 @@ GameObject:
   - component: {fileID: 2059985716}
   - component: {fileID: 2059985715}
   - component: {fileID: 2059985714}
+  - component: {fileID: 2059985717}
   m_Layer: 0
   m_Name: kitchen_stoolL (1)
   m_TagString: Untagged
@@ -32474,6 +33232,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059985712}
   m_Mesh: {fileID: -4502215673982397847, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &2059985717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059985712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.47
+  OverrideMaxDistance: 4.23
 --- !u!1 &2071288201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5332276913350673425, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -32556,6 +33344,7 @@ GameObject:
   - component: {fileID: 2088882118}
   - component: {fileID: 2088882117}
   - component: {fileID: 2088882116}
+  - component: {fileID: 2088882119}
   m_Layer: 0
   m_Name: stove (1)
   m_TagString: Untagged
@@ -32643,6 +33432,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088882114}
   m_Mesh: {fileID: -2484178460185415977, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &2088882119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088882114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1713043900
+      Data2: 1306386722
+      Data3: 2092456075
+      Data4: 1659903038
+    Path: event:/Throne Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.43
+  OverrideMaxDistance: 4.44
 --- !u!1 &2102221273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4823124104104553444, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -32957,6 +33776,7 @@ GameObject:
   - component: {fileID: 2820315329946038584}
   - component: {fileID: 2803394184338178939}
   - component: {fileID: 8547181645047350291}
+  - component: {fileID: 8547181645047350292}
   m_Layer: 0
   m_Name: kitchen_stoolL
   m_TagString: Untagged
@@ -33682,6 +34502,7 @@ GameObject:
   - component: {fileID: 8360946463350454932}
   - component: {fileID: 1734225893607199763}
   - component: {fileID: 7607706852059409193}
+  - component: {fileID: 8360946463350454933}
   m_Layer: 0
   m_Name: bucket
   m_TagString: Untagged
@@ -34286,6 +35107,7 @@ GameObject:
   - component: {fileID: 4747430245972972505}
   - component: {fileID: 3287724993208071386}
   - component: {fileID: 8770717259630789658}
+  - component: {fileID: 8770717259630789659}
   m_Layer: 0
   m_Name: kitchen_shelve
   m_TagString: Untagged
@@ -34477,6 +35299,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3446016770317084132}
   m_Mesh: {fileID: 78763479650361965, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &8360946463350454933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446016770317084132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1660460457
+      Data2: 1169430235
+      Data3: -1417218384
+      Data4: -872793662
+    Path: event:/Bucket
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.64
+  OverrideMaxDistance: 6.41
 --- !u!1 &8438874236227233160
 GameObject:
   m_ObjectHideFlags: 0
@@ -34526,6 +35378,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4502215673982397847, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &8547181645047350292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140810579939723734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.47
+  OverrideMaxDistance: 4.23
 --- !u!23 &8554768915060671437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34681,6 +35563,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7853531267264793305, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
+--- !u!114 &8770717259630789659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7410070152368312764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1580939906
+      Data2: 1268674873
+      Data3: 330747539
+      Data4: 1347226725
+    Path: event:/Barrel
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 7.8
 --- !u!23 &8771158462242766669
 MeshRenderer:
   m_ObjectHideFlags: 0
