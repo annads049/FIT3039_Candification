@@ -576,10 +576,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638643566775710563
+  lastModified: 638643603903065551
   FileSizes:
   - Name: Desktop
-    Value: 1457440
+    Value: 1505760
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -596,10 +596,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638643566775730598
+  lastModified: 638643603903100651
   FileSizes:
   - Name: Desktop
-    Value: 2512
+    Value: 2592
   Exists: 1
 --- !u!114 &-1959480188306966445
 MonoBehaviour:
@@ -843,12 +843,14 @@ MonoBehaviour:
   - {fileID: -1959480188306966445}
   - {fileID: 2319896659375749609}
   - {fileID: 5632086207834645158}
+  - {fileID: 2734511607393307041}
+  - {fileID: 3608808799333051526}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638643566775730598
+  cacheTime: 638643603903100651
   cacheVersion: 131591
 --- !u!114 &155791584020826678
 MonoBehaviour:
@@ -1121,6 +1123,33 @@ MonoBehaviour:
   - Carpet
   - Grass
   Exists: 1
+--- !u!114 &2734511607393307041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bars
+  m_EditorClassIdentifier: 
+  Path: event:/Bars
+  Guid:
+    Data1: 907981438
+    Data2: 1106170818
+    Data3: -691485280
+    Data4: 1909671034
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.8
+  Length: 450
 --- !u!114 &3214211273646740605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1231,33 @@ MonoBehaviour:
   - Carpet
   - Grass
   Exists: 1
+--- !u!114 &3608808799333051526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Toilet
+  m_EditorClassIdentifier: 
+  Path: event:/Toilet
+  Guid:
+    Data1: 55128756
+    Data2: 1281432123
+    Data3: -1774972280
+    Data4: 1272301327
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7.8
+  Length: 530
 --- !u!114 &3953863543012600237
 MonoBehaviour:
   m_ObjectHideFlags: 0
