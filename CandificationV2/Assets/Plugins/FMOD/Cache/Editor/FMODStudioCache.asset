@@ -576,10 +576,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638643603903065551
+  lastModified: 638643615835518024
   FileSizes:
   - Name: Desktop
-    Value: 1505760
+    Value: 1690912
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -596,10 +596,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638643603903100651
+  lastModified: 638643615835538009
   FileSizes:
   - Name: Desktop
-    Value: 2592
+    Value: 2680
   Exists: 1
 --- !u!114 &-1959480188306966445
 MonoBehaviour:
@@ -845,12 +845,14 @@ MonoBehaviour:
   - {fileID: 5632086207834645158}
   - {fileID: 2734511607393307041}
   - {fileID: 3608808799333051526}
+  - {fileID: 7834064437706210718}
+  - {fileID: 1513140640906869145}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638643603903100651
+  cacheTime: 638643615835538009
   cacheVersion: 131591
 --- !u!114 &155791584020826678
 MonoBehaviour:
@@ -1014,6 +1016,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 9
   Length: 700
+--- !u!114 &1513140640906869145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Chains
+  m_EditorClassIdentifier: 
+  Path: event:/Chains
+  Guid:
+    Data1: 676553213
+    Data2: 1148885570
+    Data3: -1928593527
+    Data4: -345389074
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &2030437760239530696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,6 +1550,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7.8
   Length: 370
+--- !u!114 &7834064437706210718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Screeching
+  m_EditorClassIdentifier: 
+  Path: event:/Screeching
+  Guid:
+    Data1: -780229418
+    Data2: 1111382679
+    Data3: -1414813013
+    Data4: -1473046975
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11000
 --- !u!114 &7924937474465397262
 MonoBehaviour:
   m_ObjectHideFlags: 0
