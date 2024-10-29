@@ -603,10 +603,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638658433227866064
+  lastModified: 638658438117650791
   FileSizes:
   - Name: Desktop
-    Value: 3044800
+    Value: 5097088
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -623,10 +623,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638658433227886032
+  lastModified: 638658438117680795
   FileSizes:
   - Name: Desktop
-    Value: 2756
+    Value: 2804
   Exists: 1
 --- !u!114 &-1959480188306966445
 MonoBehaviour:
@@ -709,6 +709,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8500
+--- !u!114 &-1278782122235147957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM_Lower
+  m_EditorClassIdentifier: 
+  Path: event:/BGM_Lower
+  Guid:
+    Data1: -349465253
+    Data2: 1231675866
+    Data3: 1065446272
+    Data4: 848880183
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 181972
 --- !u!114 &-1197633203766724501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,12 +903,13 @@ MonoBehaviour:
   - {fileID: 1513140640906869145}
   - {fileID: 2880938347629226050}
   - {fileID: -4770581042795067182}
+  - {fileID: -1278782122235147957}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638658433227886032
+  cacheTime: 638658438117680795
   cacheVersion: 131591
 --- !u!114 &155791584020826678
 MonoBehaviour:
