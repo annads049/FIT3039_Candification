@@ -117760,7 +117760,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: -15
+          value: -16
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -151458,17 +151458,17 @@ MonoBehaviour:
         serializedVersion: 2
         x: 781
         y: 88
-        width: 107
+        width: 103
         height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Show canvas
+          name: FadeOut
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 2
+        toState: State 4
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -151476,14 +151476,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.UiTextSetText
-        - HutongGames.PlayMaker.Actions.CameraFadeOut
+        - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
         - 
         actionEnabled: 0101
         actionIsOpen: 0101
         actionStartIndex: 0000000004000000
-        actionHashCodes: 09fbab0454303200
+        actionHashCodes: 09fbab0448c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -151507,7 +151507,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: I made it out!
+          value: Time to leave this ruined kingdom behind.
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -151518,7 +151518,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2
+          value: 3
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -151529,34 +151529,27 @@ MonoBehaviour:
           value: 0
         fsmVector2Params: []
         fsmVector3Params: []
-        fsmColorParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {r: 0, g: 0, b: 0, a: 1}
+        fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Show canvas
-        byteData: 0001
+        - FadeOut
+        byteData: 0000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001100000001000000190000000f0000001700000001000000
+        paramDataType: 140000001200000011000000010000000f0000001700000001000000
         paramName:
         - gameObject
         - text
         - resetOnExit
         - everyFrame
-        - color
         - time
         - finishEvent
         - realTime
-        paramDataPos: 0000000000000000000000000000000000000000000000000000000001000000
-        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000000000000000000001000000
+        paramByteDataSize: 00000000000000000000000001000000000000000000000001000000
     - name: Change dialogue
       description: 
       colorIndex: 0
@@ -151641,8 +151634,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1018
-        y: 80
+        x: 1136
+        y: 93
         width: 100
         height: 32
       isBreakpoint: 0
@@ -151705,7 +151698,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 4
+          value: 5
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -151760,8 +151753,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1255
-        y: 63
+        x: 1300
+        y: 78
         width: 100
         height: 16
       isBreakpoint: 0
@@ -151802,7 +151795,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          enumName: 
+          enumName: UnityEngine.SceneManagement.LoadSceneMode
           intValue: 0
         fsmFloatParams: []
         fsmIntParams:
@@ -151843,6 +151836,86 @@ MonoBehaviour:
         - failureEvent
         paramDataPos: 00000000000000000000000000000000000000000000000001000000
         paramByteDataSize: 04000000000000000000000000000000000000000000000000000000
+    - name: State 4
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 937
+        y: 95
+        width: 107
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Show canvas
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: State 2
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CameraFadeOut
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 54303200
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {r: 0, g: 0, b: 0, a: 1}
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Show canvas
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 190000000f0000001700000001000000
+        paramName:
+        - color
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000000000000000000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     events:
     - name: Interaction
       isSystemEvent: 0
@@ -151857,6 +151930,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: menu
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: FadeOut
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
