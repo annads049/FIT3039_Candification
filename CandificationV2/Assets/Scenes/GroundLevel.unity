@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.24084255, g: 0.41682225, b: 0.60285264, a: 1}
+  m_IndirectSpecularColor: {r: 0.24084188, g: 0.4168213, b: 0.6028507, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23453,13 +23453,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.FloatCompare
         - HutongGames.PlayMaker.Actions.UiTextSetText
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: 1bcdca0409fbab04
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000b000000
+        actionHashCodes: 1bcdca0409fbab043416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -23471,6 +23473,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 727039293}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -23484,6 +23494,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: That code is not working
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Door Locked
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -23516,7 +23538,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -23529,7 +23557,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000000f0000000f0000001700000017000000170000000100000014000000120000001100000001000000
+        paramDataType: 0f0000000f0000000f000000170000001700000017000000010000001400000012000000110000000100000014000000120000001c00000012000000
         paramName:
         - float1
         - float2
@@ -23542,8 +23570,12 @@ MonoBehaviour:
         - text
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000001000000020000000000000001000000020000000000000000000000000000000000000001000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000100000000000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 000000000100000002000000000000000100000002000000000000000000000000000000000000000100000001000000010000000000000002000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000
     - name: State 2
       description: 
       colorIndex: 0
@@ -23859,13 +23891,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.UiTextSetText
         - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 09fbab0448c01101
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000007000000
+        actionHashCodes: 09fbab0448c011013416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -23877,6 +23911,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 727039293}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -23890,6 +23932,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: I can hear the locks turning
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Door Opening 2
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -23910,7 +23964,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -23921,7 +23981,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000011000000010000000f0000001700000001000000
+        paramDataType: 140000001200000011000000010000000f000000170000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - text
@@ -23930,8 +23990,12 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000000000000000000000000000000000001000000
-        paramByteDataSize: 00000000000000000000000001000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 0000000000000000000000000000000000000000000000000100000001000000010000000000000002000000
+        paramByteDataSize: 0000000000000000000000000100000000000000000000000100000000000000000000000000000000000000
     events:
     - name: Interaction
       isSystemEvent: 0
@@ -116029,11 +116093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.403
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.1
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -116041,7 +116105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -116049,7 +116113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalRotation.z
@@ -116061,7 +116125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5497668368453176276, guid: 173e7a68ff7fe42fb9aaca2c2ad0371c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

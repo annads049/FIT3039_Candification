@@ -10491,7 +10491,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 701152865}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 111.208, z: 0}
 --- !u!114 &505376399
 MonoBehaviour:
@@ -12390,6 +12390,7 @@ GameObject:
   - component: {fileID: 646038811}
   - component: {fileID: 646038813}
   - component: {fileID: 646038812}
+  - component: {fileID: 646038814}
   m_Layer: 0
   m_Name: L_door1
   m_TagString: Untagged
@@ -12461,6 +12462,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646038810}
+  m_Mesh: {fileID: 6923186523557919805, guid: 462e61213df3344b4893ca2428fb0edb, type: 3}
+--- !u!64 &646038814
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646038810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 6923186523557919805, guid: 462e61213df3344b4893ca2428fb0edb, type: 3}
 --- !u!1001 &661251840
 PrefabInstance:
@@ -14617,7 +14632,6 @@ GameObject:
   - component: {fileID: 799177428}
   - component: {fileID: 799177427}
   - component: {fileID: 799177426}
-  - component: {fileID: 799177429}
   m_Layer: 0
   m_Name: stove (3)
   m_TagString: Untagged
@@ -14705,36 +14719,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799177424}
   m_Mesh: {fileID: -2484178460185415977, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
---- !u!114 &799177429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799177424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1713043900
-      Data2: 1306386722
-      Data3: 2092456075
-      Data4: 1659903038
-    Path: event:/Throne Hit
-  Event: 
-  PlayEvent: 7
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 0.43
-  OverrideMaxDistance: 4.44
 --- !u!1 &800930563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9b05091b2028b4eab60d71d19d5a3f, type: 3}
@@ -14770,41 +14754,6 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 1.84
   OverrideMaxDistance: 9.16
---- !u!1 &805338194 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -470414890435899409, guid: e02ebd4523cc62c4d855e40b9b6365c0, type: 3}
-  m_PrefabInstance: {fileID: 701152864}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &805338199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 805338194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1459830955
-      Data2: 1148950533
-      Data3: 605564558
-      Data4: -1184043152
-    Path: event:/Statue Hit
-  Event: 
-  PlayEvent: 7
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 15
 --- !u!1001 &806221928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18419,6 +18368,7 @@ GameObject:
   - component: {fileID: 1031898868}
   - component: {fileID: 1031898870}
   - component: {fileID: 1031898869}
+  - component: {fileID: 1031898871}
   m_Layer: 0
   m_Name: sideboard_body_legs
   m_TagString: Untagged
@@ -18490,6 +18440,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031898867}
+  m_Mesh: {fileID: 8233816212277828516, guid: 462e61213df3344b4893ca2428fb0edb, type: 3}
+--- !u!64 &1031898871
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031898867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 8233816212277828516, guid: 462e61213df3344b4893ca2428fb0edb, type: 3}
 --- !u!1001 &1032479287
 PrefabInstance:
@@ -19677,41 +19641,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86b51b7d509d3b74fb2991f413620bf8, type: 3}
---- !u!1 &1128964390 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -6621220454054408018, guid: e02ebd4523cc62c4d855e40b9b6365c0, type: 3}
-  m_PrefabInstance: {fileID: 701152864}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1128964395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128964390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1660460457
-      Data2: 1169430235
-      Data3: -1417218384
-      Data4: -872793662
-    Path: event:/Bucket
-  Event: 
-  PlayEvent: 7
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 7.8
 --- !u!1 &1129751380 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7350489546481257824, guid: 7ccfbcbb91a3f8c4495b6841d19b8b0a, type: 3}
@@ -22484,41 +22413,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 15
---- !u!1 &1246696529 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8825338841230839440, guid: e02ebd4523cc62c4d855e40b9b6365c0, type: 3}
-  m_PrefabInstance: {fileID: 701152864}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1246696534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246696529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1660460457
-      Data2: 1169430235
-      Data3: -1417218384
-      Data4: -872793662
-    Path: event:/Bucket
-  Event: 
-  PlayEvent: 7
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 7.8
 --- !u!1 &1249572108
 GameObject:
   m_ObjectHideFlags: 0
@@ -31893,7 +31787,6 @@ GameObject:
   - component: {fileID: 1616454265}
   - component: {fileID: 1616454264}
   - component: {fileID: 1616454263}
-  - component: {fileID: 1616454266}
   m_Layer: 0
   m_Name: stove (2)
   m_TagString: Untagged
@@ -31981,36 +31874,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616454261}
   m_Mesh: {fileID: -2484178460185415977, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
---- !u!114 &1616454266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616454261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1713043900
-      Data2: 1306386722
-      Data3: 2092456075
-      Data4: 1659903038
-    Path: event:/Throne Hit
-  Event: 
-  PlayEvent: 7
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 0.43
-  OverrideMaxDistance: 4.44
 --- !u!1 &1621721124
 GameObject:
   m_ObjectHideFlags: 0
@@ -40304,7 +40167,6 @@ GameObject:
   - component: {fileID: 2088882118}
   - component: {fileID: 2088882117}
   - component: {fileID: 2088882116}
-  - component: {fileID: 2088882119}
   m_Layer: 0
   m_Name: stove (1)
   m_TagString: Untagged
@@ -40392,36 +40254,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088882114}
   m_Mesh: {fileID: -2484178460185415977, guid: 60015c5966f9b48f6a8757eb08b1cbf5, type: 3}
---- !u!114 &2088882119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088882114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1713043900
-      Data2: 1306386722
-      Data3: 2092456075
-      Data4: 1659903038
-    Path: event:/Throne Hit
-  Event: 
-  PlayEvent: 7
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 0.43
-  OverrideMaxDistance: 4.44
 --- !u!1 &2097872689
 GameObject:
   m_ObjectHideFlags: 0
@@ -41579,6 +41411,7 @@ GameObject:
   - component: {fileID: 7814246877234312445}
   - component: {fileID: 6737465779426230824}
   - component: {fileID: 505654989990612307}
+  - component: {fileID: 7814246877234312446}
   m_Layer: 0
   m_Name: sideboard_body_legs
   m_TagString: Untagged
@@ -42355,6 +42188,20 @@ Transform:
   m_Father: {fileID: 6799230923161179694}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7814246877234312446
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014442116849436830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8233816212277828516, guid: 462e61213df3344b4893ca2428fb0edb, type: 3}
 --- !u!1 &8069037142201660591
 GameObject:
   m_ObjectHideFlags: 0
