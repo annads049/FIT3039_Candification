@@ -3421,7 +3421,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1692376443
 RectTransform:
@@ -3577,14 +3577,12 @@ MonoBehaviour:
       hideUnused: 0
       transitions: []
       actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.SetMouseCursor
-        customNames:
-        - 
-        actionEnabled: 00
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 074b1504
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -3595,51 +3593,28 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
-        fsmObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: 
-          value: {fileID: 2800000, guid: 9e64e741c7462354a86c291fbdd6386d, type: 3}
+        fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00
+        byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 21000000110000001100000001000000
-        paramName:
-        - cursorTexture
-        - hideCursor
-        - lockCursor
-        - everyFrame
-        paramDataPos: 00000000000000000100000000000000
-        paramByteDataSize: 00000000000000000000000001000000
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events: []
     globalTransitions: []
     variables:
@@ -3942,18 +3917,14 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetMouseCursor
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.Wait
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.LoadScene
         customNames:
         - 
         - 
         - 
-        - 
-        - 
-        actionEnabled: 0101010000
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000004000000090000000c00000011000000
-        actionHashCodes: 074b1504b2cf100048c01101b2cf100020a9b100
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000009000000
+        actionHashCodes: 074b1504b2cf100048c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -3965,27 +3936,13 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 1692376436}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 281343036}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
+        fsmStringParams: []
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -3996,14 +3953,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams: []
         fsmArrayParams: []
-        fsmEnumParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          enumName: UnityEngine.SceneManagement.LoadSceneMode
-          intValue: 0
+        fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 0
           name: 
@@ -4011,13 +3961,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 7
-        fsmIntParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
+        fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -4043,24 +3987,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -4068,14 +3994,12 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Story intro complete
-        - 
-        - 
-        byteData: 00000001000000000000
+        byteData: 00000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 2100000011000000110000000100000014000000110000001100000001000000010000000f000000170000000100000014000000110000001100000001000000010000000700000012000000100000002a000000110000001700000017000000
+        paramDataType: 2100000011000000110000000100000014000000110000001100000001000000010000000f0000001700000001000000
         paramName:
         - cursorTexture
         - hideCursor
@@ -4089,20 +4013,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        - sceneReference
-        - sceneByName
-        - sceneAtIndex
-        - loadSceneMode
-        - success
-        - successEvent
-        - failureEvent
-        paramDataPos: 000000000000000001000000000000000000000002000000030000000100000002000000000000000000000003000000010000000400000005000000040000000500000006000000000000000000000000000000060000000100000002000000
-        paramByteDataSize: 000000000000000000000000010000000000000000000000000000000100000001000000000000000000000001000000000000000000000000000000010000000100000004000000000000000000000000000000000000000000000000000000
+        paramDataPos: 000000000000000001000000000000000000000002000000030000000100000002000000000000000000000003000000
+        paramByteDataSize: 000000000000000000000000010000000000000000000000000000000100000001000000000000000000000001000000
     - name: Load
       description: 
       colorIndex: 0
