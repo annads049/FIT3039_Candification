@@ -3,7 +3,22 @@ guid: 6a69155ff6aae29419725029541fa422
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Drawer
+    second: {fileID: 2100000, guid: ee79835f2ab45f0418da54c7ba064fb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Drawer_Body
+    second: {fileID: 2100000, guid: 9a18ad6b70828a04185c975b397cc7a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__blinn1
+    second: {fileID: 1108147716743453759, guid: 9ebf456ff64bf064c9ea831422d06bec, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -67,7 +82,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
