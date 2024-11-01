@@ -657,7 +657,7 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638660673203227698
+  lastModified: 638660767055223286
   FileSizes:
   - Name: Desktop
     Value: 7248000
@@ -677,10 +677,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638660673203278405
+  lastModified: 638660767055253276
   FileSizes:
   - Name: Desktop
-    Value: 2980
+    Value: 2972
   Exists: 1
 --- !u!114 &-2681239955824578913
 MonoBehaviour:
@@ -986,15 +986,15 @@ MonoBehaviour:
   - {fileID: -4770581042795067182}
   - {fileID: -1278782122235147957}
   - {fileID: -8237698743598310705}
-  - {fileID: 5722009493111736475}
   - {fileID: -3051933748930004236}
   - {fileID: -2681239955824578913}
+  - {fileID: 2573734786182483373}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638660673203278405
+  cacheTime: 638660767055253276
   cacheVersion: 131591
 --- !u!114 &155791584020826678
 MonoBehaviour:
@@ -1267,6 +1267,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 1
   Length: 0
+--- !u!114 &2573734786182483373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Upper Wall
+  m_EditorClassIdentifier: 
+  Path: event:/Upper Wall
+  Guid:
+    Data1: 88700128
+    Data2: 1172492470
+    Data3: -657001812
+    Data4: 1893052551
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 220
 --- !u!114 &2651244344138013992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1665,33 +1692,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7
   Length: 480
---- !u!114 &5722009493111736475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Stovetop
-  m_EditorClassIdentifier: 
-  Path: event:/Stovetop
-  Guid:
-    Data1: 88700128
-    Data2: 1172492470
-    Data3: -657001812
-    Data4: 1893052551
-  Banks:
-  - {fileID: -2781746238857800742}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 15
-  Length: 220
 --- !u!114 &7003746561070551848
 MonoBehaviour:
   m_ObjectHideFlags: 0

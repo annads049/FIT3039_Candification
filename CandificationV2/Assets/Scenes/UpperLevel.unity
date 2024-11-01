@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1513,6 +1513,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58673571}
   m_CullTransparentMesh: 1
+--- !u!1 &58754444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d10109b5e4b23284caaf91091d1685aa, type: 3}
+  m_PrefabInstance: {fileID: 164191008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &60226939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1896,6 +1901,41 @@ Transform:
   m_Father: {fileID: 1529334955}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &93186453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
+  m_PrefabInstance: {fileID: 66945288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &93186457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93186453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -157624884
+      Data2: 1335017966
+      Data3: -2110739017
+      Data4: 770144379
+    Path: event:/Fountain Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &97767955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4b10f2bfc49140249a51bde54d1e833f, type: 3}
@@ -3980,13 +4020,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.TweenRotation
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0001
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000ea32f700
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000101
+        actionStartIndex: 000000000500000016000000
+        actionHashCodes: b2cf1000ea32f7003416ea04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -4018,6 +4060,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams:
         - curve:
             serializedVersion: 2
@@ -4030,7 +4080,19 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Door Opening
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -4089,6 +4151,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 10, z: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -4099,7 +4167,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001100000011000000010000000100000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
+        paramDataType: 140000001100000011000000010000000100000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000014000000120000001c00000012000000
         paramName:
         - gameObject
         - activate
@@ -4123,8 +4191,12 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        paramDataPos: 00000000000000000100000000000000010000000200000000000000000000000600000001000000010000000100000000000000000000000000000001000000020000000a000000000000000e0000001200000013000000
-        paramByteDataSize: 00000000000000000000000001000000010000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000100000000000000010000000200000000000000000000000600000001000000010000000100000000000000000000000000000001000000020000000a000000000000000e000000120000001300000002000000000000000200000001000000
+        paramByteDataSize: 0000000000000000000000000100000001000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000000000000000000000000000
     - name: State 4
       description: 
       colorIndex: 0
@@ -4141,12 +4213,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.UiTextSetText
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 09fbab04
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 09fbab043416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -4158,6 +4232,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 199871750}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -4171,6 +4253,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Another locked door, there's been so many of these.
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Door Locked
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -4185,7 +4279,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -4195,14 +4295,18 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001100000001000000
+        paramDataType: 1400000012000000110000000100000014000000120000001c00000012000000
         paramName:
         - gameObject
         - text
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000
-        paramByteDataSize: 00000000000000000000000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 0000000000000000000000000000000001000000010000000000000002000000
+        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000000000000
     - name: State 5
       description: 
       colorIndex: 0
@@ -5021,6 +5125,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d10109b5e4b23284caaf91091d1685aa, type: 3}
   m_PrefabInstance: {fileID: 164191008}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &164191012
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58754444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1638881838452590218, guid: d10109b5e4b23284caaf91091d1685aa, type: 3}
+--- !u!114 &164191013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58754444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1415172515
+      Data2: 1216034328
+      Data3: -2023593833
+      Data4: -294860279
+    Path: event:/Soft
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.85
+  OverrideMaxDistance: 4.79
 --- !u!1 &164381568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,13 +6029,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.TweenPosition
         - HutongGames.PlayMaker.Actions.TweenPosition
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0001
-        actionStartIndex: 0000000011000000
-        actionHashCodes: c1a70500c1a70500
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000101
+        actionStartIndex: 000000001100000022000000
+        actionHashCodes: c1a70500c1a705003416ea04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -5931,6 +6081,14 @@ MonoBehaviour:
             showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams:
         - curve:
             serializedVersion: 2
@@ -5949,7 +6107,19 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Book Shift
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -6033,6 +6203,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -6044,7 +6220,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
+        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000014000000120000001c00000012000000
         paramName:
         - fromOption
         - fromTarget
@@ -6080,8 +6256,12 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d00000001000000210000002500000026000000
-        paramByteDataSize: 04000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000004000000000000000400000001000000040000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d0000000100000021000000250000002600000002000000000000000400000001000000
+        paramByteDataSize: 0400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000000000000000000000000000
     - name: State 3
       description: 
       colorIndex: 0
@@ -7513,7 +7693,16 @@ MonoBehaviour:
         - useGravity
         paramDataPos: 00000000000000000100000001000000
         paramByteDataSize: 00000000000000000000000000000000
-    events: []
+    events:
+    - name: Check Next Painting
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: wait
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Interaction
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: Interaction
@@ -8395,13 +8584,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.TweenPosition
         - HutongGames.PlayMaker.Actions.TweenPosition
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0000
-        actionStartIndex: 0000000011000000
-        actionHashCodes: c1a70500c1a70500
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000001
+        actionStartIndex: 000000001100000022000000
+        actionHashCodes: c1a70500c1a705003416ea04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -8445,6 +8636,14 @@ MonoBehaviour:
             showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams:
         - curve:
             serializedVersion: 2
@@ -8463,7 +8662,19 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Book Shift
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -8547,6 +8758,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -8558,7 +8775,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
+        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000014000000120000001c00000012000000
         paramName:
         - fromOption
         - fromTarget
@@ -8594,8 +8811,12 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d00000001000000210000002500000026000000
-        paramByteDataSize: 04000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000004000000000000000400000001000000040000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d0000000100000021000000250000002600000002000000000000000400000001000000
+        paramByteDataSize: 0400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000000000000000000000000000
     - name: State 3
       description: 
       colorIndex: 0
@@ -14130,6 +14351,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
   m_PrefabInstance: {fileID: 290749167}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &299460023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
+  m_PrefabInstance: {fileID: 1282470509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &302284541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14865,6 +15091,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cde2f9a4de86f9c42ad4e2a4c308cdd8, type: 3}
   m_PrefabInstance: {fileID: 404891061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &409453572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e5949846ddbe3ab44b686f44ce8e18dd, type: 3}
+  m_PrefabInstance: {fileID: 1603739387}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &414714294 stripped
 GameObject:
@@ -16182,13 +16413,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.TweenPosition
         - HutongGames.PlayMaker.Actions.TweenPosition
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0001
-        actionStartIndex: 0000000011000000
-        actionHashCodes: c1a70500c1a70500
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000101
+        actionStartIndex: 000000001100000022000000
+        actionHashCodes: c1a70500c1a705003416ea04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -16232,6 +16465,14 @@ MonoBehaviour:
             showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams:
         - curve:
             serializedVersion: 2
@@ -16250,7 +16491,19 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Book Shift
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -16334,6 +16587,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -16345,7 +16604,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
+        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000014000000120000001c00000012000000
         paramName:
         - fromOption
         - fromTarget
@@ -16381,8 +16640,12 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d00000001000000210000002500000026000000
-        paramByteDataSize: 04000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000004000000000000000400000001000000040000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d0000000100000021000000250000002600000002000000000000000400000001000000
+        paramByteDataSize: 0400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000000000000000000000000000
     - name: State 3
       description: 
       colorIndex: 0
@@ -19704,6 +19967,41 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 3
   m_TargetDisplay: 0
+--- !u!1 &516824177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3222756327854917715, guid: 05796a4834bd742cab1c2558621fe924, type: 3}
+  m_PrefabInstance: {fileID: 993742145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &516824182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516824177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1001 &525073071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20146,6 +20444,41 @@ Transform:
   m_Father: {fileID: 1529334955}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &566528190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2167227905065644740, guid: f4aba7ea05a98fe49bfb7e27a5854c47, type: 3}
+  m_PrefabInstance: {fileID: 1955918551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &566528195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566528190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -150573957
+      Data2: 1122080264
+      Data3: 1697909645
+      Data4: 1097963983
+    Path: event:/Table Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.52
+  OverrideMaxDistance: 3.68
 --- !u!1 &575304912
 GameObject:
   m_ObjectHideFlags: 0
@@ -27073,8 +27406,38 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.08, y: 2.58, z: 2.25}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0324193, y: 1.2339562, z: 1.0442399}
+  m_Center: {x: 0.005617885, y: 0.67301834, z: 0.5019915}
+--- !u!114 &878829113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533008863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1660460457
+      Data2: 1169430235
+      Data3: -1417218384
+      Data4: -872793662
+    Path: event:/Bucket
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 7.8
 --- !u!1 &880072132
 GameObject:
   m_ObjectHideFlags: 0
@@ -34354,6 +34717,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1075934768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
+  m_PrefabInstance: {fileID: 1867957470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1079891451
 GameObject:
   m_ObjectHideFlags: 0
@@ -34699,8 +35067,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 255c7cc41393a4b82b71e65c367e882a, type: 3}
   m_PrefabInstance: {fileID: 1099075066}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1099075070
-BoxCollider:
+--- !u!114 &1099075073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373014091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 287554701
+      Data2: 1187286262
+      Data3: -253754709
+      Data4: 24368965
+    Path: event:/Bowl
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 7.8
+--- !u!64 &1099075074
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -34709,9 +35107,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4901693, y: 0.8786258, z: 1.285384}
-  m_Center: {x: 1.3080797e-16, y: 0.44984713, z: -0.017050387}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5887539713737324625, guid: 255c7cc41393a4b82b71e65c367e882a, type: 3}
 --- !u!1001 &1128855871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39898,6 +40297,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
   m_PrefabInstance: {fileID: 1282470509}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1282470514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299460023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -157624884
+      Data2: 1335017966
+      Data3: -2110739017
+      Data4: 770144379
+    Path: event:/Fountain Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &1285779112
 GameObject:
   m_ObjectHideFlags: 0
@@ -45671,13 +46100,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.TweenPosition
         - HutongGames.PlayMaker.Actions.TweenPosition
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0001
-        actionStartIndex: 0000000011000000
-        actionHashCodes: c1a70500c1a70500
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000101
+        actionStartIndex: 000000001100000022000000
+        actionHashCodes: c1a70500c1a705003416ea04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -45721,6 +46152,14 @@ MonoBehaviour:
             showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams:
         - curve:
             serializedVersion: 2
@@ -45739,7 +46178,19 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Book Shift
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -45823,6 +46274,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -45834,7 +46291,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000
+        paramDataType: 07000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f00000011000000070000001700000002000000010000000700000014000000120000001c00000012000000
         paramName:
         - fromOption
         - fromTarget
@@ -45870,8 +46327,12 @@ MonoBehaviour:
         - normalizedTime
         - everyFrame
         - updateType
-        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d00000001000000210000002500000026000000
-        paramByteDataSize: 04000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000004000000000000000400000001000000040000000400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 00000000000000000000000004000000010000000100000000000000000000000000000000000000010000000000000008000000000000000c00000010000000110000001500000002000000020000001900000003000000030000000100000002000000010000000100000003000000010000001d0000000100000021000000250000002600000002000000000000000400000001000000
+        paramByteDataSize: 0400000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000400000000000000040000000100000004000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000000000000000000000000000
     - name: State 3
       description: 
       colorIndex: 0
@@ -47932,14 +48393,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.FMODPlayEventInstance
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010001
-        actionStartIndex: 000000000300000008000000
-        actionHashCodes: 27fbe103b2cf1000b2cf1000
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01000101
+        actionStartIndex: 0000000003000000080000000d000000
+        actionHashCodes: 27fbe103b2cf1000b2cf10003416ea04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -47959,13 +48422,33 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: event:/Discovery
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -48010,7 +48493,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmVector2Params: []
-        fsmVector3Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -48020,7 +48509,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 11000000110000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000
+        paramDataType: 1100000011000000010000001400000011000000110000000100000001000000140000001100000011000000010000000100000014000000120000001c00000012000000
         paramName:
         - boolVariable
         - boolValue
@@ -48035,8 +48524,12 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000010000000000000000000000020000000300000001000000020000000100000004000000050000000300000004000000
-        paramByteDataSize: 00000000000000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
+        - GameObject
+        - FMODEvent
+        - position
+        - storeEventInstance
+        paramDataPos: 0000000001000000000000000000000002000000030000000100000002000000010000000400000005000000030000000400000002000000000000000000000001000000
+        paramByteDataSize: 0000000000000000010000000000000000000000000000000100000001000000000000000000000000000000010000000100000000000000000000000000000000000000
     events:
     - name: Interaction
       isSystemEvent: 0
@@ -50458,6 +50951,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fe53f8edbfee5f4192e9e11934c09ba, type: 3}
   m_PrefabInstance: {fileID: 1441550948}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1446169253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
+  m_PrefabInstance: {fileID: 2115987558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1473642774
 GameObject:
   m_ObjectHideFlags: 0
@@ -52836,6 +53334,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e5949846ddbe3ab44b686f44ce8e18dd, type: 3}
   m_PrefabInstance: {fileID: 1603739387}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1603739391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409453572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.45
+  OverrideMaxDistance: 3
+--- !u!64 &1603739392
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409453572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3340704466309137077, guid: e5949846ddbe3ab44b686f44ce8e18dd, type: 3}
 --- !u!1 &1613765815
 GameObject:
   m_ObjectHideFlags: 0
@@ -54125,6 +54667,41 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1660777105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
+  m_PrefabInstance: {fileID: 290749167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1660777109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660777105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -157624884
+      Data2: 1335017966
+      Data3: -2110739017
+      Data4: 770144379
+    Path: event:/Fountain Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &1667389370
 GameObject:
   m_ObjectHideFlags: 0
@@ -56879,6 +57456,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1792897545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4053603513815271777, guid: 7b1e74267994ae94da27f0758bd6a9b4, type: 3}
+  m_PrefabInstance: {fileID: 1523720195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1792897550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792897545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -150573957
+      Data2: 1122080264
+      Data3: 1697909645
+      Data4: 1097963983
+    Path: event:/Table Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0.4
+  OverrideMaxDistance: 3.49
 --- !u!1 &1811144632
 GameObject:
   m_ObjectHideFlags: 0
@@ -57243,6 +57855,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
   m_PrefabInstance: {fileID: 1867957470}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1867957475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075934768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -157624884
+      Data2: 1335017966
+      Data3: -2110739017
+      Data4: 770144379
+    Path: event:/Fountain Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &1868012503
 GameObject:
   m_ObjectHideFlags: 0
@@ -57353,6 +57995,7 @@ GameObject:
   - component: {fileID: 1917088897}
   - component: {fileID: 1917088896}
   - component: {fileID: 1917088895}
+  - component: {fileID: 1917088899}
   m_Layer: 0
   m_Name: Crosshair_Canvas
   m_TagString: Untagged
@@ -57443,6 +58086,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1917088899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917088894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &1920483200
 GameObject:
   m_ObjectHideFlags: 0
@@ -57572,6 +58245,41 @@ Transform:
   m_Father: {fileID: 1529334955}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1923467140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
+  m_PrefabInstance: {fileID: 581574858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1923467144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923467140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -157624884
+      Data2: 1335017966
+      Data3: -2110739017
+      Data4: 770144379
+    Path: event:/Fountain Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &1926936653
 GameObject:
   m_ObjectHideFlags: 0
@@ -58813,6 +59521,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3340704466309137077, guid: e5949846ddbe3ab44b686f44ce8e18dd, type: 3}
+--- !u!114 &1997216087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529008624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -406246982
+      Data2: 1136250689
+      Data3: 293937848
+      Data4: 528328208
+    Path: event:/Wood Move
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 2.8
 --- !u!114 &2001926587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62034,6 +62772,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae3a30d432f38414fb05254cf2e2bcf8, type: 3}
   m_PrefabInstance: {fileID: 2115987558}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2115987563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446169253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -157624884
+      Data2: 1335017966
+      Data3: -2110739017
+      Data4: 770144379
+    Path: event:/Fountain Hit
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &2120555960
 GameObject:
   m_ObjectHideFlags: 0
@@ -62804,6 +63572,7 @@ GameObject:
   - component: {fileID: 6916644620042105737}
   - component: {fileID: 2774753845365712615}
   - component: {fileID: 5721453071547225637}
+  - component: {fileID: 6916644620042105738}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x370
   m_TagString: Untagged
@@ -62910,6 +63679,7 @@ GameObject:
   - component: {fileID: 2890931394964919139}
   - component: {fileID: 3686599926965372821}
   - component: {fileID: 7768495380158700097}
+  - component: {fileID: 8519366196134072848}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x341
   m_TagString: Untagged
@@ -62960,6 +63730,7 @@ GameObject:
   - component: {fileID: 799425876554534037}
   - component: {fileID: 2516564040872616009}
   - component: {fileID: 8051714303696390318}
+  - component: {fileID: 8051714303696390319}
   m_Layer: 0
   m_Name: Wall_Door_flat15
   m_TagString: Untagged
@@ -63297,6 +64068,7 @@ GameObject:
   - component: {fileID: 2359560470275034026}
   - component: {fileID: 7812932697621078097}
   - component: {fileID: 1924024336156194460}
+  - component: {fileID: 7812932697621078098}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x319
   m_TagString: Untagged
@@ -63358,6 +64130,7 @@ GameObject:
   - component: {fileID: 5824817336211960698}
   - component: {fileID: 8122430692878565117}
   - component: {fileID: 1481753570410497170}
+  - component: {fileID: 8122430692878565118}
   m_Layer: 0
   m_Name: Wall_Door_flat22
   m_TagString: Untagged
@@ -63676,6 +64449,7 @@ GameObject:
   - component: {fileID: 1254064156982635997}
   - component: {fileID: 129871556091744643}
   - component: {fileID: 748096563493025335}
+  - component: {fileID: 2445438829399894144}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x327
   m_TagString: Untagged
@@ -63770,6 +64544,7 @@ GameObject:
   - component: {fileID: 8750269267017055421}
   - component: {fileID: 2757714908029633714}
   - component: {fileID: 6155451351984645687}
+  - component: {fileID: 8750269267017055422}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x347
   m_TagString: Untagged
@@ -63845,6 +64620,7 @@ GameObject:
   - component: {fileID: 5970339411887420741}
   - component: {fileID: 3838522474746932798}
   - component: {fileID: 5055111968296285590}
+  - component: {fileID: 5970339411887420742}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x367
   m_TagString: Untagged
@@ -63981,6 +64757,7 @@ GameObject:
   - component: {fileID: 3584222935851809474}
   - component: {fileID: 5806441495741613961}
   - component: {fileID: 4789414906500083100}
+  - component: {fileID: 6256562932284976540}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x369
   m_TagString: Untagged
@@ -64360,6 +65137,7 @@ GameObject:
   - component: {fileID: 1237661120553707657}
   - component: {fileID: 9021154298933651839}
   - component: {fileID: 1287612557131450418}
+  - component: {fileID: 9021154298933651840}
   m_Layer: 0
   m_Name: Wall_Door_flat20
   m_TagString: Untagged
@@ -64402,6 +65180,7 @@ GameObject:
   - component: {fileID: 8070933770021783243}
   - component: {fileID: 2388725471659889835}
   - component: {fileID: 5722976915229950413}
+  - component: {fileID: 8070933770021783244}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x340
   m_TagString: Untagged
@@ -65148,6 +65927,7 @@ GameObject:
   - component: {fileID: 5459806634685350878}
   - component: {fileID: 4127550642231523964}
   - component: {fileID: 5076865699132642837}
+  - component: {fileID: 5459806634685350879}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x318
   m_TagString: Untagged
@@ -65224,6 +66004,7 @@ GameObject:
   - component: {fileID: 1620048518241675235}
   - component: {fileID: 2245096566317783769}
   - component: {fileID: 6718986591408395179}
+  - component: {fileID: 6718986591408395180}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x337
   m_TagString: Untagged
@@ -65305,6 +66086,7 @@ GameObject:
   - component: {fileID: 7674629011167863231}
   - component: {fileID: 4594655293944516467}
   - component: {fileID: 6653501974541118936}
+  - component: {fileID: 8914518685386051751}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x324
   m_TagString: Untagged
@@ -65559,6 +66341,7 @@ GameObject:
   - component: {fileID: 8408524810212613268}
   - component: {fileID: 1272585774613097454}
   - component: {fileID: 5028592631873308272}
+  - component: {fileID: 8408524810212613269}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x405
   m_TagString: Untagged
@@ -65809,6 +66592,7 @@ GameObject:
   - component: {fileID: 8694714507095785632}
   - component: {fileID: 396002447303104343}
   - component: {fileID: 3429566506686849329}
+  - component: {fileID: 8694714507095785633}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x389
   m_TagString: Untagged
@@ -65954,6 +66738,7 @@ GameObject:
   - component: {fileID: 262838737316174781}
   - component: {fileID: 8386646271888181629}
   - component: {fileID: 8193719431237346398}
+  - component: {fileID: 9175490303086563962}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x363
   m_TagString: Untagged
@@ -66348,6 +67133,7 @@ GameObject:
   - component: {fileID: 1055224133109586994}
   - component: {fileID: 46090549694100511}
   - component: {fileID: 3239712446445352323}
+  - component: {fileID: 6759461650623377934}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x333
   m_TagString: Untagged
@@ -66404,6 +67190,7 @@ GameObject:
   - component: {fileID: 5419747174574515643}
   - component: {fileID: 7556803999835276929}
   - component: {fileID: 5254601005752148673}
+  - component: {fileID: 7556803999835276930}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x329
   m_TagString: Untagged
@@ -66423,6 +67210,7 @@ GameObject:
   - component: {fileID: 5386163736536054273}
   - component: {fileID: 2335621107698990327}
   - component: {fileID: 1448481589662761061}
+  - component: {fileID: 5386163736536054274}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x334
   m_TagString: Untagged
@@ -66442,6 +67230,7 @@ GameObject:
   - component: {fileID: 6912760152426855588}
   - component: {fileID: 6051424713877404432}
   - component: {fileID: 4006394050964589122}
+  - component: {fileID: 6912760152426855589}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x383
   m_TagString: Untagged
@@ -66732,6 +67521,7 @@ GameObject:
   - component: {fileID: 5593008533502169892}
   - component: {fileID: 4058025165967001209}
   - component: {fileID: 958770256264658857}
+  - component: {fileID: 7209662381804291964}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x346
   m_TagString: Untagged
@@ -66875,6 +67665,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2445438829399894144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634710429861754773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &2467766630093107188
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -67133,6 +67953,7 @@ GameObject:
   - component: {fileID: 9183389813330847992}
   - component: {fileID: 7804167999055371749}
   - component: {fileID: 3448906095420475981}
+  - component: {fileID: 9183389813330847993}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x382
   m_TagString: Untagged
@@ -67533,6 +68354,7 @@ GameObject:
   - component: {fileID: 6953665931075866030}
   - component: {fileID: 3593279474199303776}
   - component: {fileID: 5748926607858631461}
+  - component: {fileID: 6953665931075866031}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x315
   m_TagString: Untagged
@@ -67552,6 +68374,7 @@ GameObject:
   - component: {fileID: 4103301300338670480}
   - component: {fileID: 7764426673549836234}
   - component: {fileID: 6772860068000727646}
+  - component: {fileID: 7764426673549836235}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x362
   m_TagString: Untagged
@@ -67672,6 +68495,7 @@ GameObject:
   - component: {fileID: 4476787920726539702}
   - component: {fileID: 4249379236837654696}
   - component: {fileID: 6192669811215568707}
+  - component: {fileID: 6192669811215568708}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x322
   m_TagString: Untagged
@@ -67814,6 +68638,7 @@ GameObject:
   - component: {fileID: 2632795264206802278}
   - component: {fileID: 4532279529234646414}
   - component: {fileID: 5195858851286795056}
+  - component: {fileID: 8529878268080699948}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x351
   m_TagString: Untagged
@@ -67966,6 +68791,7 @@ GameObject:
   - component: {fileID: 7657232576586097260}
   - component: {fileID: 5013654338584458083}
   - component: {fileID: 7497527395546885343}
+  - component: {fileID: 7657232576586097261}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x375
   m_TagString: Untagged
@@ -68742,6 +69568,7 @@ GameObject:
   - component: {fileID: 6859609052796118672}
   - component: {fileID: 3420502230000264107}
   - component: {fileID: 8254584964435072534}
+  - component: {fileID: 8254584964435072535}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x344
   m_TagString: Untagged
@@ -68901,6 +69728,7 @@ GameObject:
   - component: {fileID: 7546813460534488399}
   - component: {fileID: 2795555207455599898}
   - component: {fileID: 4819942998236327442}
+  - component: {fileID: 7546813460534488400}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x339
   m_TagString: Untagged
@@ -68920,6 +69748,7 @@ GameObject:
   - component: {fileID: 5648264001920863113}
   - component: {fileID: 4555996702012122118}
   - component: {fileID: 7243356728504231940}
+  - component: {fileID: 7243356728504231941}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x321
   m_TagString: Untagged
@@ -68977,6 +69806,7 @@ GameObject:
   - component: {fileID: 200304432330420375}
   - component: {fileID: 1181532725027369492}
   - component: {fileID: 2723283370669081694}
+  - component: {fileID: 5669660014679406087}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x381
   m_TagString: Untagged
@@ -68996,6 +69826,7 @@ GameObject:
   - component: {fileID: 7003180041632944077}
   - component: {fileID: 2864564784509475494}
   - component: {fileID: 2655938517499184754}
+  - component: {fileID: 8848345672038030205}
   m_Layer: 0
   m_Name: Wall_Door_flat14
   m_TagString: Untagged
@@ -69127,6 +69958,7 @@ GameObject:
   - component: {fileID: 2814878798411382913}
   - component: {fileID: 402630054948920466}
   - component: {fileID: 6053305539089113648}
+  - component: {fileID: 6053305539089113649}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x372
   m_TagString: Untagged
@@ -69640,6 +70472,7 @@ GameObject:
   - component: {fileID: 6592143599935323728}
   - component: {fileID: 6041165540205221535}
   - component: {fileID: 8282902182579504939}
+  - component: {fileID: 9097936350550115071}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x386
   m_TagString: Untagged
@@ -69940,6 +70773,7 @@ GameObject:
   - component: {fileID: 6755455958727810585}
   - component: {fileID: 5834825800240850738}
   - component: {fileID: 4253103776907539511}
+  - component: {fileID: 6755455958727810586}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x326
   m_TagString: Untagged
@@ -69975,6 +70809,7 @@ GameObject:
   - component: {fileID: 4081655155883241159}
   - component: {fileID: 5006257801587624902}
   - component: {fileID: 5148387255312421550}
+  - component: {fileID: 8125198407935913717}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x317
   m_TagString: Untagged
@@ -70008,6 +70843,7 @@ GameObject:
   - component: {fileID: 932775339407753526}
   - component: {fileID: 3386568390409809429}
   - component: {fileID: 4425133562110971306}
+  - component: {fileID: 4445571939998954505}
   m_Layer: 0
   m_Name: Wall_Door_flat19
   m_TagString: Untagged
@@ -70015,6 +70851,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4445571939998954505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445571939998954504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &4450073181509838136
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -70365,6 +71231,7 @@ GameObject:
   - component: {fileID: 3314117936511078122}
   - component: {fileID: 2950818143012613432}
   - component: {fileID: 9149422345844822894}
+  - component: {fileID: 9149422345844822895}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x335
   m_TagString: Untagged
@@ -70575,6 +71442,7 @@ GameObject:
   - component: {fileID: 4598624645247426872}
   - component: {fileID: 8108279450705276066}
   - component: {fileID: 5529540018440730712}
+  - component: {fileID: 8108279450705276067}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x366
   m_TagString: Untagged
@@ -70646,6 +71514,7 @@ GameObject:
   - component: {fileID: 3755397565153038927}
   - component: {fileID: 1649843463168513344}
   - component: {fileID: 8767917806450646580}
+  - component: {fileID: 8767917806450646581}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x345
   m_TagString: Untagged
@@ -70955,6 +71824,7 @@ GameObject:
   - component: {fileID: 6682737991712110013}
   - component: {fileID: 1896933299316984054}
   - component: {fileID: 8873868255121547671}
+  - component: {fileID: 8873868255121547672}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x313
   m_TagString: Untagged
@@ -71834,6 +72704,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2207742804325675108}
   m_Mesh: {fileID: -6576377950199369080, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &5386163736536054274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2207742804325675108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &5394593525492935649
 GameObject:
   m_ObjectHideFlags: 0
@@ -71959,6 +72859,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500257991835245821}
   m_Mesh: {fileID: -2877835092380929607, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &5459806634685350879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500257991835245821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &5476008581688546815
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -72000,6 +72930,7 @@ GameObject:
   - component: {fileID: 3719410080172935726}
   - component: {fileID: 5779298083232339139}
   - component: {fileID: 2036773957643691314}
+  - component: {fileID: 6422407784086176508}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x373
   m_TagString: Untagged
@@ -72131,6 +73062,7 @@ GameObject:
   - component: {fileID: 7737108737955090787}
   - component: {fileID: 633003277677884741}
   - component: {fileID: 722195358508306137}
+  - component: {fileID: 7737108737955090788}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x408
   m_TagString: Untagged
@@ -72230,6 +73162,7 @@ GameObject:
   - component: {fileID: 5787663233457903744}
   - component: {fileID: 2361118449584346680}
   - component: {fileID: 1384970714515100528}
+  - component: {fileID: 8552158449666779711}
   m_Layer: 0
   m_Name: Wall_Door_flat17
   m_TagString: Untagged
@@ -72249,6 +73182,7 @@ GameObject:
   - component: {fileID: 1694618997659849947}
   - component: {fileID: 9086906247594419646}
   - component: {fileID: 7520821845594475432}
+  - component: {fileID: 9086906247594419647}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x350
   m_TagString: Untagged
@@ -72276,6 +73210,7 @@ GameObject:
   - component: {fileID: 7222831262235806876}
   - component: {fileID: 4974047279140980637}
   - component: {fileID: 4149983662820026453}
+  - component: {fileID: 7222831262235806877}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x368
   m_TagString: Untagged
@@ -72345,6 +73280,7 @@ GameObject:
   - component: {fileID: 173924893800186297}
   - component: {fileID: 1187368107602246530}
   - component: {fileID: 4258885025121512480}
+  - component: {fileID: 5609673450811198694}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x312
   m_TagString: Untagged
@@ -72352,6 +73288,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5609673450811198694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609673450811198693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &5623538119043821704
 GameObject:
   m_ObjectHideFlags: 0
@@ -72364,6 +73330,7 @@ GameObject:
   - component: {fileID: 214311101836190993}
   - component: {fileID: 1846377149732040576}
   - component: {fileID: 8907711524437224611}
+  - component: {fileID: 8907711524437224612}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x384
   m_TagString: Untagged
@@ -72409,6 +73376,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5669660014679406087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3931034757295020505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &5670268536189163122
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -72852,6 +73849,7 @@ GameObject:
   - component: {fileID: 2591807902705859852}
   - component: {fileID: 4565894199352251854}
   - component: {fileID: 3990089279900224665}
+  - component: {fileID: 5864752594052287029}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x349
   m_TagString: Untagged
@@ -72859,6 +73857,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5864752594052287029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5864752594052287028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &5882589047697570490
 Transform:
   m_ObjectHideFlags: 0
@@ -72969,6 +73997,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729971993251018192}
   m_Mesh: {fileID: -6163304206276713801, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &5970339411887420742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729971993251018192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &5972893537814591330
 GameObject:
   m_ObjectHideFlags: 0
@@ -73108,6 +74166,7 @@ GameObject:
   - component: {fileID: 737711895564978453}
   - component: {fileID: 8362210809125492008}
   - component: {fileID: 8662844519047110884}
+  - component: {fileID: 8662844519047110885}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x316
   m_TagString: Untagged
@@ -73247,6 +74306,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1128083524726971657, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &6053305539089113649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4005123152961385901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &6092468853296800481
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73376,6 +74465,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4481964785025212214, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &6192669811215568708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3149394519801461844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &6192717235394711467
 Transform:
   m_ObjectHideFlags: 0
@@ -73436,6 +74555,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6256562932284976540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878281114449773930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &6264762242360075533
 Transform:
   m_ObjectHideFlags: 0
@@ -73638,6 +74787,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6422407784086176508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481466819824400177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &6480575927633966786
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73707,6 +74886,7 @@ GameObject:
   - component: {fileID: 1443019369640265207}
   - component: {fileID: 7951236291502305403}
   - component: {fileID: 1584617621976528266}
+  - component: {fileID: 7951236291502305404}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x325
   m_TagString: Untagged
@@ -73920,6 +75100,7 @@ GameObject:
   - component: {fileID: 664803380990557537}
   - component: {fileID: 6042381837997293220}
   - component: {fileID: 6092468853296800481}
+  - component: {fileID: 6636378160380113424}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x330
   m_TagString: Untagged
@@ -73927,6 +75108,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6636378160380113424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6636378160380113423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &6653501974541118936
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74034,6 +75245,7 @@ GameObject:
   - component: {fileID: 627164487605704205}
   - component: {fileID: 7169402463155125192}
   - component: {fileID: 7304130167509752064}
+  - component: {fileID: 7304130167509752065}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x376
   m_TagString: Untagged
@@ -74089,6 +75301,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3079226239617397597, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &6718986591408395180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511264637156408841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &6731306032876509945
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74176,6 +75418,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4396458422088962813}
   m_Mesh: {fileID: -3120652544071168644, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &6755455958727810586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396458422088962813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &6759461650623377933
 Transform:
   m_ObjectHideFlags: 0
@@ -74191,6 +75463,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6759461650623377934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108161598816746956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &6772860068000727646
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -74345,6 +75647,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2242513818501616170}
   m_Mesh: {fileID: -8451750005977634841, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &6912760152426855589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2242513818501616170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &6916644620042105737
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74353,6 +75685,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136629681531007599}
   m_Mesh: {fileID: -8799963140804155575, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &6916644620042105738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136629681531007599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &6925257258873715045
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74486,6 +75848,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3034972860929536018}
   m_Mesh: {fileID: 6512799666505165353, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &6953665931075866031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034972860929536018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &6969624883489605056
 GameObject:
   m_ObjectHideFlags: 0
@@ -74498,6 +75890,7 @@ GameObject:
   - component: {fileID: 3159621061249822205}
   - component: {fileID: 7540629536712239171}
   - component: {fileID: 3538190165398680068}
+  - component: {fileID: 7540629536712239172}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x320
   m_TagString: Untagged
@@ -74756,6 +76149,7 @@ GameObject:
   - component: {fileID: 6213373583039967706}
   - component: {fileID: 6546267289698809558}
   - component: {fileID: 590826303796579630}
+  - component: {fileID: 7121233847433058700}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x371
   m_TagString: Untagged
@@ -74763,6 +76157,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7121233847433058700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7121233847433058699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &7134577810976130610
 Transform:
   m_ObjectHideFlags: 0
@@ -74895,6 +76319,7 @@ GameObject:
   - component: {fileID: 8291414765384429625}
   - component: {fileID: 1779913225827551621}
   - component: {fileID: 4925992552298228080}
+  - component: {fileID: 8291414765384429626}
   m_Layer: 0
   m_Name: Wall_Door_flat23
   m_TagString: Untagged
@@ -74958,6 +76383,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7209662381804291964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370354312987329544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &7222831262235806876
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74966,6 +76421,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5602042352191102341}
   m_Mesh: {fileID: -4336093726997366719, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &7222831262235806877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5602042352191102341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &7242004379748040156
 GameObject:
   m_ObjectHideFlags: 0
@@ -74999,6 +76484,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1506609907526796850, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &7243356728504231941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3883374681318491885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &7278685681307204854
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75135,6 +76650,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -612003304973119982, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &7304130167509752065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704846312483180456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &7308524744863066508
 GameObject:
   m_ObjectHideFlags: 0
@@ -75147,6 +76692,7 @@ GameObject:
   - component: {fileID: 8415010995291786723}
   - component: {fileID: 721667042139554697}
   - component: {fileID: 6040011389442911434}
+  - component: {fileID: 8816998485943688388}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x387
   m_TagString: Untagged
@@ -75464,6 +77010,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7540629536712239172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969624883489605056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &7546813460534488399
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -75472,6 +77048,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3846953995792350102}
   m_Mesh: {fileID: 5594868407227576784, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &7546813460534488400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846953995792350102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &7556542734405253615
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -75522,6 +77128,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7556803999835276930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2195419235003901714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &7569883524626318552
 GameObject:
   m_ObjectHideFlags: 0
@@ -75534,6 +77170,7 @@ GameObject:
   - component: {fileID: 4713581520487363072}
   - component: {fileID: 7407621946462258583}
   - component: {fileID: 8446505659830795138}
+  - component: {fileID: 8446505659830795139}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x332
   m_TagString: Untagged
@@ -75737,6 +77374,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3322512544745446074}
   m_Mesh: {fileID: 7062227006639766564, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &7657232576586097261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322512544745446074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &7674629011167863231
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -75757,6 +77424,7 @@ GameObject:
   - component: {fileID: 2425623802581051876}
   - component: {fileID: 1001327305438203293}
   - component: {fileID: 8115072416280925460}
+  - component: {fileID: 8115072416280925461}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x391
   m_TagString: Untagged
@@ -75772,6 +77440,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5531630397819646086}
   m_Mesh: {fileID: -3030198386379373385, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &7737108737955090788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531630397819646086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &7764426673549836234
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75814,6 +77512,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7764426673549836235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3085551615047045880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &7768495380158700097
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -75912,6 +77640,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7812932697621078098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445912267936899440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &7821173117149645524
 Transform:
   m_ObjectHideFlags: 0
@@ -75993,6 +77751,7 @@ GameObject:
   - component: {fileID: 6898927398019730605}
   - component: {fileID: 3802132251984155794}
   - component: {fileID: 6414928117238274818}
+  - component: {fileID: 7869807959035922032}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x365
   m_TagString: Untagged
@@ -76000,6 +77759,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7869807959035922032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7869807959035922031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &7875859998062519068
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76076,6 +77865,7 @@ GameObject:
   - component: {fileID: 1916497307212631681}
   - component: {fileID: 4972746042390538243}
   - component: {fileID: 5309589463631182591}
+  - component: {fileID: 7935507438331019747}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x323
   m_TagString: Untagged
@@ -76083,6 +77873,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7935507438331019747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7935507438331019746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &7938471536998140060
 GameObject:
   m_ObjectHideFlags: 0
@@ -76160,6 +77980,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7951236291502305404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6490998694141703064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &7957718322390797491
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76259,6 +78109,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1944049524497718597, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8051714303696390319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227260271642461677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8052663248181850388
 Transform:
   m_ObjectHideFlags: 0
@@ -76286,6 +78166,7 @@ GameObject:
   - component: {fileID: 4397502828065225473}
   - component: {fileID: 6688812897294662262}
   - component: {fileID: 4190303253123520210}
+  - component: {fileID: 8053954791258625637}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x378
   m_TagString: Untagged
@@ -76293,6 +78174,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8053954791258625637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053954791258625636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &8055160125029472597
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76330,6 +78241,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076938638527711403}
   m_Mesh: {fileID: -143010184533543469, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8070933770021783244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076938638527711403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &8085520651821347638
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -76423,6 +78364,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8108279450705276067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672573838028211813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &8115072416280925460
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76437,6 +78408,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1697860533885963090, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8115072416280925461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733332446789647464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &8122430692878565117
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -76479,6 +78480,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8122430692878565118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449156274827409916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8125198407935913716
 Transform:
   m_ObjectHideFlags: 0
@@ -76494,6 +78525,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8125198407935913717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414295571494463745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8132646469044697129
 GameObject:
   m_ObjectHideFlags: 0
@@ -76506,6 +78567,7 @@ GameObject:
   - component: {fileID: 8995203314675878918}
   - component: {fileID: 5144437398550175220}
   - component: {fileID: 5506946192764368768}
+  - component: {fileID: 8995203314675878919}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x385
   m_TagString: Untagged
@@ -76813,6 +78875,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -181429886947825445, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8254584964435072535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3790718894149197522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8265638966110027986
 Transform:
   m_ObjectHideFlags: 0
@@ -76850,6 +78942,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7170051414863068426}
   m_Mesh: {fileID: 2536156064176088482, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8291414765384429626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170051414863068426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8291718049367293846
 Transform:
   m_ObjectHideFlags: 0
@@ -77071,6 +79193,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685983829389795106}
   m_Mesh: {fileID: -4503684480023738521, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8408524810212613269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685983829389795106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8409651477751429695
 GameObject:
   m_ObjectHideFlags: 0
@@ -77133,6 +79285,7 @@ GameObject:
   - component: {fileID: 8998366694853035889}
   - component: {fileID: 8907998209581253900}
   - component: {fileID: 6735402275784239297}
+  - component: {fileID: 8998366694853035890}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x343
   m_TagString: Untagged
@@ -77154,6 +79307,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1823774944028417813, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8446505659830795139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7569883524626318552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &8488346644287362644
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77281,6 +79464,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8519366196134072848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181778440710134716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &8521561161453202696
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77332,6 +79545,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8529878268080699948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261253534136653372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &8538052288776668358
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77389,6 +79632,36 @@ Transform:
   m_Father: {fileID: 8492624048338914980}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8552158449666779711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5573516598356964825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8556040483440218218
 GameObject:
   m_ObjectHideFlags: 0
@@ -77401,6 +79674,7 @@ GameObject:
   - component: {fileID: 7556542734405253615}
   - component: {fileID: 2720745640992593197}
   - component: {fileID: 252028843049866942}
+  - component: {fileID: 8556040483440218219}
   m_Layer: 0
   m_Name: Wall_Door_flat21
   m_TagString: Untagged
@@ -77408,6 +79682,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8556040483440218219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8556040483440218218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &8558211773506052351
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77485,6 +79789,7 @@ GameObject:
   - component: {fileID: 8166837765810558861}
   - component: {fileID: 7931295228433540909}
   - component: {fileID: 6039727978580631318}
+  - component: {fileID: 8580244749999599027}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x388
   m_TagString: Untagged
@@ -77492,6 +79797,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8580244749999599027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8580244749999599026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8583977327575382133
 GameObject:
   m_ObjectHideFlags: 0
@@ -77504,6 +79839,7 @@ GameObject:
   - component: {fileID: 5159052183699959767}
   - component: {fileID: 8936658144480137694}
   - component: {fileID: 7118208125319668578}
+  - component: {fileID: 8936658144480137695}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x338
   m_TagString: Untagged
@@ -77606,6 +79942,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3975739645233571222, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8662844519047110885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041864424500919483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8674612006205591663
 GameObject:
   m_ObjectHideFlags: 0
@@ -77674,6 +80040,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842396689503213934}
   m_Mesh: {fileID: 3724045610497393582, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8694714507095785633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842396689503213934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8702220334136510750
 GameObject:
   m_ObjectHideFlags: 0
@@ -77686,6 +80082,7 @@ GameObject:
   - component: {fileID: 4637972055702304918}
   - component: {fileID: 65495392627403880}
   - component: {fileID: 4463396484878775363}
+  - component: {fileID: 8702220334136510751}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x379
   m_TagString: Untagged
@@ -77693,6 +80090,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8702220334136510751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8702220334136510750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &8722890939390063633
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77745,6 +80172,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712301710978959197}
   m_Mesh: {fileID: 3064149944767201175, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8750269267017055422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712301710978959197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &8767917806450646580
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77759,6 +80216,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8011762077648782156, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8767917806450646581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4706094954583406540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8784710638237351318
 Transform:
   m_ObjectHideFlags: 0
@@ -77786,6 +80273,7 @@ GameObject:
   - component: {fileID: 600888947250578860}
   - component: {fileID: 4144861491942465065}
   - component: {fileID: 8745313807505035021}
+  - component: {fileID: 8791160000214137174}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x380
   m_TagString: Untagged
@@ -77793,6 +80281,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8791160000214137174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791160000214137173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8795057181414019997
 GameObject:
   m_ObjectHideFlags: 0
@@ -77805,6 +80323,7 @@ GameObject:
   - component: {fileID: 7067928895777913148}
   - component: {fileID: 7573601048973409351}
   - component: {fileID: 5024733362581142506}
+  - component: {fileID: 8795057181414019998}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x404
   m_TagString: Untagged
@@ -77812,6 +80331,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8795057181414019998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8795057181414019997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8808996532162048538
 GameObject:
   m_ObjectHideFlags: 0
@@ -77865,6 +80414,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8816998485943688388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308524744863066508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8820592581443471793
 Transform:
   m_ObjectHideFlags: 0
@@ -77919,6 +80498,7 @@ GameObject:
   - component: {fileID: 2668444826881745584}
   - component: {fileID: 4733546449433452695}
   - component: {fileID: 8012616954177084865}
+  - component: {fileID: 8848334050739553611}
   m_Layer: 0
   m_Name: Wall_SingleSided_5x314
   m_TagString: Untagged
@@ -77926,6 +80506,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8848334050739553611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848334050739553610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8848345672038030204
 Transform:
   m_ObjectHideFlags: 0
@@ -77941,6 +80551,36 @@ Transform:
   m_Father: {fileID: 8492624048338914980}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8848345672038030205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3942744679993551102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &8873868255121547671
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -77955,6 +80595,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6889504224505155643, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8873868255121547672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916258035912461206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8876781680638702566
 GameObject:
   m_ObjectHideFlags: 0
@@ -77967,6 +80637,7 @@ GameObject:
   - component: {fileID: 7022336730695113962}
   - component: {fileID: 4793510934639777153}
   - component: {fileID: 1976230217410358314}
+  - component: {fileID: 8876781680638702567}
   m_Layer: 0
   m_Name: Wall_Door_flat13
   m_TagString: Untagged
@@ -77974,6 +80645,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8876781680638702567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876781680638702566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8892429701948229792
 Transform:
   m_ObjectHideFlags: 0
@@ -78003,6 +80704,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8073697482472274736, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8907711524437224612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5623538119043821704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &8907998209581253900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78060,6 +80791,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8914518685386051751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560034068710230144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &8936245142433615673
 GameObject:
   m_ObjectHideFlags: 0
@@ -78121,6 +80882,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8936658144480137695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583977327575382133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &8960962210266927326
 Transform:
   m_ObjectHideFlags: 0
@@ -78205,6 +80996,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8132646469044697129}
   m_Mesh: {fileID: 6934020371371867787, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8995203314675878919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132646469044697129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &8998366694853035889
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -78213,6 +81034,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8429405613600839299}
   m_Mesh: {fileID: 741737247012944739, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &8998366694853035890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429405613600839299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &9001690729852323104
 Transform:
   m_ObjectHideFlags: 0
@@ -78270,6 +81121,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9021154298933651840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033388433839631703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &9062055312220628962
 GameObject:
   m_ObjectHideFlags: 0
@@ -78373,6 +81254,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9086906247594419647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587564533032069269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!23 &9094108691049537270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78449,6 +81360,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9097936350550115071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4253361853760507762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!1 &9107560528787254127
 GameObject:
   m_ObjectHideFlags: 0
@@ -78461,6 +81402,7 @@ GameObject:
   - component: {fileID: 4723487645913752931}
   - component: {fileID: 8981681208242502577}
   - component: {fileID: 3506724102093096012}
+  - component: {fileID: 9107560528787254128}
   m_Layer: 0
   m_Name: Wall_Door_flat16
   m_TagString: Untagged
@@ -78468,6 +81410,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9107560528787254128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107560528787254127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!64 &9117074914334476904
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78607,6 +81579,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6658036568910572545, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &9149422345844822895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566603139344257004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!4 &9154976935522076359
 Transform:
   m_ObjectHideFlags: 0
@@ -78637,6 +81639,36 @@ Transform:
   m_Father: {fileID: 7039543003209766763}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9175490303086563962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867328596269443268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &9183389813330847992
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -78645,6 +81677,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2756653002075698558}
   m_Mesh: {fileID: -9009891816253811765, guid: 89c12b4f69a98f444a5770153a6f2124, type: 3}
+--- !u!114 &9183389813330847993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756653002075698558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 88700128
+      Data2: 1172492470
+      Data3: -657001812
+      Data4: 1893052551
+    Path: event:/Upper Wall
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
 --- !u!33 &9212059230717490035
 MeshFilter:
   m_ObjectHideFlags: 0
