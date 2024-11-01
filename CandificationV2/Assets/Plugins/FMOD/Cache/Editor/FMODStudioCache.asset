@@ -163,6 +163,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 220
+--- !u!114 &-7951036476145617025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crack 3
+  m_EditorClassIdentifier: 
+  Path: event:/Crack 3
+  Guid:
+    Data1: 2043652973
+    Data2: 1153285184
+    Data3: -694849902
+    Data4: -1969946921
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 886
 --- !u!114 &-7752230864067682547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,10 +684,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638660781836866328
+  lastModified: 638660808450247098
   FileSizes:
   - Name: Desktop
-    Value: 7248000
+    Value: 7306656
   Exists: 1
 --- !u!114 &-2779128118692748628
 MonoBehaviour:
@@ -677,10 +704,10 @@ MonoBehaviour:
   Path: ../Sounds/Candification_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638660781836931553
+  lastModified: 638660808450268181
   FileSizes:
   - Name: Desktop
-    Value: 2972
+    Value: 3132
   Exists: 1
 --- !u!114 &-2681239955824578913
 MonoBehaviour:
@@ -844,6 +871,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7.8
   Length: 620
+--- !u!114 &-1075568143435890219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crack 1
+  m_EditorClassIdentifier: 
+  Path: event:/Crack 1
+  Guid:
+    Data1: -1600694433
+    Data2: 1203655461
+    Data3: -870439519
+    Data4: 1360635016
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 373
 --- !u!114 &-843488765030687184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,12 +1043,16 @@ MonoBehaviour:
   - {fileID: -3051933748930004236}
   - {fileID: -2681239955824578913}
   - {fileID: 2573734786182483373}
+  - {fileID: 946968940914329597}
+  - {fileID: 6991823855975615895}
+  - {fileID: -1075568143435890219}
+  - {fileID: -7951036476145617025}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2781746238857800742}
   StringsBanks:
   - {fileID: -2779128118692748628}
-  cacheTime: 638660781836931553
+  cacheTime: 638660808450268181
   cacheVersion: 131591
 --- !u!114 &155791584020826678
 MonoBehaviour:
@@ -1050,6 +1108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 6
   Length: 1657
+--- !u!114 &946968940914329597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Chest
+  m_EditorClassIdentifier: 
+  Path: event:/Chest
+  Guid:
+    Data1: 1107702572
+    Data2: 1161478941
+    Data3: 1654690986
+    Data4: 1273353275
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1751
 --- !u!114 &1006573918010834112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,6 +1777,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7
   Length: 480
+--- !u!114 &6991823855975615895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crack 2
+  m_EditorClassIdentifier: 
+  Path: event:/Crack 2
+  Guid:
+    Data1: -1236384212
+    Data2: 1267038157
+    Data3: 994414508
+    Data4: 359246574
+  Banks:
+  - {fileID: -2781746238857800742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 477
 --- !u!114 &7003746561070551848
 MonoBehaviour:
   m_ObjectHideFlags: 0
